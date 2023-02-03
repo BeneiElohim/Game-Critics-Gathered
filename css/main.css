@@ -1,4 +1,5 @@
 @import "footer.css";
+@import "header.css";
 img {
     max-width: 10em;
     height: auto;
@@ -13,22 +14,5 @@ body {
     background-color: #fff;
     margin: 0;
     padding: 0;
-}
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-}
-header li {
-    display: inline-block;
-    margin: 0 1em;
-}
-header a {
-    color: #fff;
-    text-decoration: none;
 }
 
