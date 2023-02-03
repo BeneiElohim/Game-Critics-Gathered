@@ -1,3 +1,4 @@
+@import "footer.css";
 img {
     max-width: 10em;
     height: auto;
@@ -30,12 +31,4 @@ header a {
     color: #fff;
     text-decoration: none;
 }
-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-}
+
