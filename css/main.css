@@ -49,14 +49,14 @@ body {
     margin-bottom: 20px;
     justify-content: center;
 }
-.bottom-content .most-popular {
+.most-popular {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 60%;
     height: auto;
 }
-.bottom-content .featured-review {
+.featured-review {
     display: flex;
     flex-direction: column;
     align-items: center;
