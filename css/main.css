@@ -36,3 +36,30 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.bottom-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border: 3px solid red;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.bottom-content .most-popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: auto;
+}
+.bottom-content .featured-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: auto;
+}
