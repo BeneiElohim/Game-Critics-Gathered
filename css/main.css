@@ -1,0 +1,15 @@
+img {
+    max-width: 10em;
+    height: auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
