@@ -31,3 +31,8 @@ body {
     border: 3px solid red;
     margin-bottom: 20px;
 }
+.top-picks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
