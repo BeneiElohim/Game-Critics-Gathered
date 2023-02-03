@@ -1,5 +1,6 @@
 @import "footer.css";
 @import "header.css";
+@import "content-box.css";
 img {
     max-width: 10em;
     height: auto;
@@ -16,3 +17,17 @@ body {
     padding: 0;
 }
 
+.top-picks-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border: 3px solid red;
+    margin-bottom: 20px;
+}
