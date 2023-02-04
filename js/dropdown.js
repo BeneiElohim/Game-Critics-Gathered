@@ -15,21 +15,21 @@ function loadPost(period) {
     console.log(period);
 }
 function showDay() {
-    day.style.display = "block";
-    week.style.display = "none";
-    month.style.display = "none";
-    console.log("day");
+    day.className = day.className.replace("non-active", "");
+    week.className = "non-active content-box";
+    month.className = "non-active content-box";
 }
 function showWeek() {
-    week.style.display = "block";
-    day.style.display = "none";
-    month.style.display = "none";
-    console.log("week");
+    week.className = week.className.replace("non-active", "");
+    day.className = "non-active content-box";
+    month.className = "non-active content-box";
 }
 function showMonth() {
-    month.style.display = "block";
-    day.style.display = "none";
-    week.style.display = "none";
-    console.log("month");
+    month.className = month.className.replace("non-active", "");
+    day.className = "non-active content-box";
+    week.className = "non-active content-box";
 }
+// Adding event listener to the dropdown
 period.addEventListener("change",()=>loadPost(period.value));
+// Running a loadPost function on page load to show the default value
+showDay();

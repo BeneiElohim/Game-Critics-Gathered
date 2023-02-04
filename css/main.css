@@ -1,6 +1,7 @@
 @import "footer.css";
 @import "header.css";
 @import "content-box.css";
+@import "slideshow.css";
 img {
     max-width: 10em;
     height: auto;

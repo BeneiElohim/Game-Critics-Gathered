@@ -11,4 +11,6 @@
     border: 3px solid red;
     margin-bottom: 20px;
 }
-
+.non-active {
+    display: none;
+}
