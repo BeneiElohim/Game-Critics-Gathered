@@ -57,35 +57,31 @@
     </div>
     <!-- Bottom Content with Most Popular and Paid Featured Review Zone -->
     <div class="bottom-content">
+        
     <!-- Most Popoular by Day/Week/Month Filter with a dropdown menu-->
         <div class="most-popular">
+            <h1>Most Popular</h1>
             <label for="most-popular-filter">Filter:</label>
-            <select name="most-popular-filter" id="most-popular-filter">
+            <select name="most-popular-filter" id="filter">
                 <option value="day">Day</option>
                 <option value="week">Week</option>
                 <option value="month">Month</option>
             </select>
-            <h1>Most Popular</h1>
-            <div class="content-box">
+            <div class="content-box" id="day">
                 <img src="images/placeholder.png" alt="most-popular">
                 <h2>Most Popular 1</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
             </div>
-            <div class="content-box">
+            <div class="content-box" id="week">
                 <img src="images/placeholder.png" alt="most-popular">
                 <h2>Most Popular 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
             </div>
-            <div class="content-box">
+            <div class="content-box" id="month">
                 <img src="images/placeholder.png" alt="most-popular">
                 <h2>Most Popular 3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
             </div>      
-            <div class="content-box">
-                <img src="images/placeholder.png" alt="most-popular">
-                <h2>Most Popular 4</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-            </div>
         </div>
     <!-- Featured Review-->
     <div class="featured-review">
@@ -97,12 +93,11 @@
         </div>
     </div>
     </div>
-    
-
     <footer>
         <div class="logo">
             <img src="images/placeholder.png" alt="logo">
         </div>
     </footer>
+    <script src="js/dropdown.js"></script>
 </body>
 </html>
