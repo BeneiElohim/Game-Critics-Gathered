@@ -64,3 +64,9 @@ body {
     width: 60%;
     height: auto;
 }
+.latest-submissions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
