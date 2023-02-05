@@ -29,28 +29,28 @@
         <h1 id="latest-title">Latest Submissions</h1>
         <div class = "slide-wrapper">
             <div id = "left-arrow">
-                <img src="images/placeholder.png" alt="left-arrow">
+                <a class = "prev" onclick="changeSlide(-1)"><img src="images/placeholder.png" alt="left-arrow"> </a>
             </div>
         <!--TODO Slideshow-->
             <div class="slide-show">
-                <div class="content-box">
+                <div class="content-box fade slide">
                     <img src="images/placeholder.png" alt="latest-submission">
                     <h2>Latest Submission 1</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
                 </div>
-                <div class="content-box non-active">
+                <div class="content-box fade slide">
                     <img src="images/placeholder.png" alt="latest-submission">
                     <h2>Latest Submission 2</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
                 </div>
-                <div class="content-box non-active">
+                <div class="content-box fade slide">
                     <img src="images/placeholder.png" alt="latest-submission">
                     <h2>Latest Submission 3</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
                 </div>
             </div>
             <div id ="right-arrow">
-                <img src="images/placeholder.png" alt="right-arrow">
+                <a class = "next" onclick="changeSlide(1)"><img src="images/placeholder.png" alt="right-arrow"> </a>
             </div>
         </div>
     </div>
@@ -124,6 +124,7 @@
             <img src="images/placeholder.png" alt="logo">
         </div>
     </footer>
+    <script src="js/slideshow.js"></script>
     <script src="js/dropdown.js"></script>
 </body>
 </html>

@@ -31,5 +31,5 @@ function showMonth() {
 }
 // Adding event listener to the dropdown
 period.addEventListener("change",()=>loadPost(period.value));
-// Running a loadPost function on page load to show the default value
+// Running a showDay function on page load to show the default value
 showDay();
