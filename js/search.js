@@ -2,10 +2,9 @@ var indexDB = [];
 var htmlFiles = [
     'index.html',
     'post1.html',
-    'post2.html'
 ]
 async function indexHTML(url) {
-   fetch(url)
+   fetch(url) 
   .then(response => response.text())
   .then(html => {
     // Parse the HTML string as described in the previous answer
@@ -34,7 +33,8 @@ function searchAndLoad(keyword) {
         if (indexDB[i].keyword == keyword) {
             alert('Found!');
             window.location.href = indexDB[i].url;
-
         }
     }
 }
+let searchText = sessionStorage.getItem("keyword");
+searchAndLoad(searchText);

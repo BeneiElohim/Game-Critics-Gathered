@@ -1,4 +1,5 @@
 let slideIndex = 1;
+let intervalInMiliseconds = 5000;
 console.log("slideIndex: " + slideIndex);
 let slides = document.getElementsByClassName("slide");
 function showSlides(n) {
@@ -12,19 +13,12 @@ function showSlides(n) {
 }
 function changeSlide(n) {
     slideIndex += n;
-    if (slideIndex > slides.length || slideIndex < 1) {
-        slideIndex = 1;
-        showSlides(slideIndex);
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    } else if (slideIndex < 1) {
+      slideIndex = slides.length;
     }
-    else if (slideIndex < 1 && n == -1) {
-        slideIndex = slides.length;
-        showSlides(slideIndex);
-    }
-    else {
-        showSlides(slideIndex);
-    }
-
-}
+    showSlides(slideIndex);
+  }
+setInterval(changeSlide, intervalInMiliseconds, 1);  
 showSlides(slideIndex);
-// TODO - add a timer to change slides automatically
-// TODO Fix back button problem

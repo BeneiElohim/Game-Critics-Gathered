@@ -1,0 +1,4 @@
+Getsessionstorage ile keywordu alıcak
+Stringi split ile formatlicaz
+//string.split("");
+// arrayi iterateleyip keyword matchleşen postları bulup listleyecek

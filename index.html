@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game Critics Gathered</title>
     <link rel="stylesheet" href="css/main.css">
+    <meta name="keywords" content="roguelike,game">
+    <script src="js/slideshow.js" defer></script>
+    <script src="js/dropdown.js" defer></script>
+    <script src="js/search-form.js" defer></script>
 </head>
 <body>
     <!-- Header involving a search bar, logo and navigation -->
@@ -14,7 +18,7 @@
                 <img src="images/placeholder.png" alt="logo">
             </div>
             <div class="search">
-                <input type="text" placeholder="Search">
+                <input type="text"  placeholder="Search" id="search-bar" onkeydown="myfunction(event)">
             </div>
             <div class="navigation">
                 <ul>
@@ -87,7 +91,7 @@
     <!-- Most Popoular by Day/Week/Month Filter with a dropdown menu-->
         <div class="most-popular">
             <h1>Most Popular</h1>
-            <label for="most-popular-filter">Filter:</label>
+            <label for="filter">Filter:</label>
             <select name="most-popular-filter" id="filter">
                 <option value="day">Day</option>
                 <option value="week">Week</option>
@@ -124,7 +128,6 @@
             <img src="images/placeholder.png" alt="logo">
         </div>
     </footer>
-    <script src="js/slideshow.js"></script>
-    <script src="js/dropdown.js"></script>
+    
 </body>
 </html>
