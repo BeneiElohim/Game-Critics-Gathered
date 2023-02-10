@@ -11,7 +11,7 @@ function search(e) {
     window.location.href = "searchpage.html";
   }
   else {
-    alert("Please enter a valid keyword. Accepted format is keyword1,keyword2,keyword3...");
+    alert("Please enter valid text. Accepted format is keyword1,keyword2,keyword3...");
   }
 }
 }
