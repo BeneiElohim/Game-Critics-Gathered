@@ -3,9 +3,15 @@
 //user is then redirected to the searchpage.html page
 let searchBar = document.getElementById("search-bar");
 function search(e) {
-  if (e.keyCode == 13) {
+  const regex = /^[a-zA-Z,]+$/;
+  if (e.keyCode ==13) {
+  if (regex.test(searchBar.value)) {
     console.log(searchBar.value);
     sessionStorage.setItem("keyword", searchBar.value);
     window.location.href = "searchpage.html";
   }
+  else {
+    alert("Please enter a valid keyword. Accepted format is keyword1,keyword2,keyword3...");
+  }
+}
 }
