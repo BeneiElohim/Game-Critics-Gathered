@@ -1,17 +1,60 @@
-//give an alert if the keyword is found, load the url after the user closes the alert
-function findAllRelatedPages(keyword) {
+function findAllRelatedPages(searchInput) {
   let relatedPages = [];
-  //TODO... birden fazla kelime aratılırsa diye split et parametreyi.
-  for (let i = 0; i < indexDB.length; i++) {
-    if (indexDB[i].keywords.includes(`${keyword}`)) {
-      relatedPages.push(indexDB[i]);
+
+  // Find and store all possible keywords by going over all of the pages' titles and content.
+  let allPossibleKeywords = [];
+  for (let page of indexDB) {
+    if (!allPossibleKeywords.includes(`${page.title.toLowerCase()}`)) {
+      allPossibleKeywords.push(page.title.toLowerCase());
+    }
+    for (let contentKeyword of page.keywords) {
+      if (!allPossibleKeywords.includes(`${contentKeyword}`)) {
+        allPossibleKeywords.push(contentKeyword);
+      }
     }
   }
+  // Find which of these possible keywords our input contains and call them validKeywords.
+  let validKeywords = [];
+  for (let possibleKeyword of allPossibleKeywords) {
+    if (searchInput.includes(`${possibleKeyword}`)) {
+      validKeywords.push(possibleKeyword);
+    }
+  }
+  if (validKeywords.length === 0) {
+    return [];
+  }
+  // Find the pages which have all the validKeywords in their keywords property.
+  //  If input has the page's title in it, you don't have to check keywords. Mark it as relatedPage.
+  for (let page of indexDB) {
+    if (validKeywords.includes(`${page.title.toLowerCase()}`)) {
+      relatedPages.push(page);
+      continue;
+    }
+
+    let hasAllValidKeywords = true;
+    for (let validKeyword of validKeywords) {
+      if (!page.keywords.includes(`${validKeyword}`)) {
+        hasAllValidKeywords = false;
+        break;
+      }
+    }
+
+    if (hasAllValidKeywords) {
+      relatedPages.push(page);
+    }
+  }
+
   return relatedPages;
 }
 
 function listAllRelatedPages(pages) {
   let searchResultList = document.querySelector(".search-results-list");
+  if (pages.length === 0) {
+    let noResultBox = document.createElement("div");
+    noResultBox.classList.add("search-no-result-box");
+    noResultBox.textContent = "No result found";
+    searchResultList.append(noResultBox);
+  }
   for (let i = 0; i < pages.length; i++) {
     let pageBox = document.createElement("li");
     pageBox.classList.add("search-result-page");
@@ -33,6 +76,6 @@ function listAllRelatedPages(pages) {
   }
 }
 
-let searchTerm = sessionStorage.getItem("keyword");
-let pages = findAllRelatedPages(searchTerm);
+let searchInput = sessionStorage.getItem("searchInput");
+let pages = findAllRelatedPages(searchInput);
 listAllRelatedPages(pages);

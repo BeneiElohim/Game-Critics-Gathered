@@ -4,8 +4,7 @@
 let searchBar = document.getElementById("search-bar");
 function search(e) {
   if (e.keyCode == 13) {
-    console.log(searchBar.value);
-    sessionStorage.setItem("keyword", searchBar.value);
+    sessionStorage.setItem("searchInput", searchBar.value.toLowerCase());
     window.location.href = "searchpage.html";
   }
 }
