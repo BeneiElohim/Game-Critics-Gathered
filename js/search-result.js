@@ -1,7 +1,18 @@
 //give an alert if the keyword is found, load the url after the user closes the alert
 function findAllRelatedPages(keyword) {
   let relatedPages = [];
-  //TODO... birden fazla kelime aratılırsa diye split et parametreyi.
+
+  if (keyword.includes(",")) {
+    keyword = keyword.split(",");
+    for (let i = 0; i < indexDB.length; i++) {
+      keyword.forEach(word => {
+        if (indexDB[i].keywords.includes(`${word}`) && !relatedPages.includes(indexDB[i])) {
+          relatedPages.push(indexDB[i]);
+        }
+      });
+  }
+  return relatedPages;
+}
   for (let i = 0; i < indexDB.length; i++) {
     if (indexDB[i].keywords.includes(`${keyword}`)) {
       relatedPages.push(indexDB[i]);
@@ -11,6 +22,10 @@ function findAllRelatedPages(keyword) {
 }
 
 function listAllRelatedPages(pages) {
+  if (pages.length == 0) {
+    document.querySelector(".search-results-list").innerHTML = "No results found";
+    console.log("No results found");
+}
   let searchResultList = document.querySelector(".search-results-list");
   for (let i = 0; i < pages.length; i++) {
     let pageBox = document.createElement("li");
