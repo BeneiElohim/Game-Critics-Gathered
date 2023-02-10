@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search</title>
-    <script src="js/search.js" defer></script>
+    <script src="js/create-database.js"></script>
     <script src="js/search-form.js" defer></script>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+    <script src="js/search-result.js" defer></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
     <!-- Header involving a search bar, logo and navigation -->
     <header>
-        <div class="logo">
-            <img src="images/placeholder.png" alt="logo">
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Search">
-        </div>
-        <div class="navigation">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-    </div>
-</header>    
+      <div class="logo">
+        <img src="images/placeholder.png" alt="logo" />
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search"
+          id="search-bar"
+          onkeydown="search(event)"
+        />
+      </div>
+      <div class="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
     <!-- Main content -->
     <main>
-        <div class="search-results">
-            <h1>Search Results</h1>
-            <div class="search-results-list">
-                <ul>
-                    <li><a href="#">Result 1</a></li>
-                    <li><a href="#">Result 2</a></li>
-                    <li><a href="#">Result 3</a></li>
-                    <li><a href="#">Result 4</a></li>
-                    <li><a href="#">Result 5</a></li>
-                    <li><a href="#">Result 6</a></li>
-                    <li><a href="#">Result 7</a></li>
-                    <li><a href="#">Result 8</a></li>
-                    <li><a href="#">Result 9</a></li>
-                    <li><a href="#">Result 10</a></li>
-                </ul>
-            </div>
+      <div class="search-results">
+        <h1>Search Results</h1>
+        <div class="search-results-list-container">
+          <ul class="search-results-list"></ul>
         </div>
+      </div>
     </main>
     <!-- Footer -->
     <footer>
-        <div class="logo">
-            <img src="images/placeholder.png" alt="logo">
-        </div>
+      <div class="logo">
+        <img src="images/placeholder.png" alt="logo" />
+      </div>
     </footer>
-</body>
+  </body>
 </html>

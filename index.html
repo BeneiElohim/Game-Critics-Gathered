@@ -1,133 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Critics Gathered</title>
-    <link rel="stylesheet" href="css/main.css">
-    <meta name="keywords" content="roguelike,game">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="import" href="component.html" />
+    <meta name="keywords" content="roguelike,game" />
     <script src="js/slideshow.js" defer></script>
     <script src="js/dropdown.js" defer></script>
     <script src="js/search-form.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header involving a search bar, logo and navigation -->
     <header>
-            <div class="logo">
-                <img src="images/placeholder.png" alt="logo">
-            </div>
-            <div class="search">
-                <input type="text"  placeholder="Search" id="search-bar" onkeydown="myfunction(event)">
-            </div>
-            <div class="navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-        </div>
+      <div class="logo">
+        <img src="images/placeholder.png" alt="logo" />
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search"
+          id="search-bar"
+          onkeydown="search(event)"
+        />
+      </div>
+      <div class="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <!--Latest Submissions Div with a Slideshow for Posts -->
     <div class="latest-submissions">
-        <h1 id="latest-title">Latest Submissions</h1>
-        <div class = "slide-wrapper">
-            <div id = "left-arrow">
-                <a class = "prev" onclick="changeSlide(-1)"><img src="images/placeholder.png" alt="left-arrow"> </a>
-            </div>
-        <!--TODO Slideshow-->
-            <div class="slide-show">
-                <div class="content-box fade slide">
-                    <img src="images/placeholder.png" alt="latest-submission">
-                    <h2>Latest Submission 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-                </div>
-                <div class="content-box fade slide">
-                    <img src="images/placeholder.png" alt="latest-submission">
-                    <h2>Latest Submission 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-                </div>
-                <div class="content-box fade slide">
-                    <img src="images/placeholder.png" alt="latest-submission">
-                    <h2>Latest Submission 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-                </div>
-            </div>
-            <div id ="right-arrow">
-                <a class = "next" onclick="changeSlide(1)"><img src="images/placeholder.png" alt="right-arrow"> </a>
-            </div>
+      <h1 id="latest-title">Latest Submissions</h1>
+      <div class="slide-wrapper">
+        <div id="left-arrow">
+          <a class="prev" onclick="changeSlide(-1)"
+            ><img src="images/placeholder.png" alt="left-arrow" />
+          </a>
         </div>
+        <!--TODO Slideshow-->
+        <div class="slide-show">
+          <div class="content-box fade slide">
+            <img src="images/placeholder.png" alt="latest-submission" />
+            <h2>Latest Submission 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quae.
+            </p>
+          </div>
+          <div class="content-box fade slide">
+            <img src="images/placeholder.png" alt="latest-submission" />
+            <h2>Latest Submission 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quae.
+            </p>
+          </div>
+          <div class="content-box fade slide">
+            <img src="images/placeholder.png" alt="latest-submission" />
+            <h2>Latest Submission 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quae.
+            </p>
+          </div>
+        </div>
+        <div id="right-arrow">
+          <a class="next" onclick="changeSlide(1)"
+            ><img src="images/placeholder.png" alt="right-arrow" />
+          </a>
+        </div>
+      </div>
     </div>
-    
+
     <!-- Top Picks By the Team with Images and Descriptions-->
     <div class="top-picks">
-        <h1>Top Picks</h1>
-        <div class="top-picks-content">
-            <div class="content-box">
-                <img src="images/placeholder.png" alt="top-pick">
-                <h2>Top Pick 1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-            </div>
-            <div class="content-box">
-                <img src="images/placeholder.png" alt="top-pick">
-                <h2>Top Pick 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-            </div>
-            <div class="content-box">
-                <img src="images/placeholder.png" alt="top-pick">
-                <h2>Top Pick 3</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-            </div>      
-            <div class="content-box">
-                <img src="images/placeholder.png" alt="top-pick">
-                <h2>Top Pick 4</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-            </div>
+      <h1>Top Picks</h1>
+      <div class="top-picks-content">
+        <div class="content-box">
+          <img src="images/placeholder.png" alt="top-pick" />
+          <h2>Top Pick 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quae.
+          </p>
         </div>
+        <div class="content-box">
+          <img src="images/placeholder.png" alt="top-pick" />
+          <h2>Top Pick 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quae.
+          </p>
+        </div>
+        <div class="content-box">
+          <img src="images/placeholder.png" alt="top-pick" />
+          <h2>Top Pick 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quae.
+          </p>
+        </div>
+        <div class="content-box">
+          <img src="images/placeholder.png" alt="top-pick" />
+          <h2>Top Pick 4</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quae.
+          </p>
+        </div>
+      </div>
     </div>
     <!-- Bottom Content with Most Popular and Paid Featured Review Zone -->
     <div class="bottom-content">
-        
-    <!-- Most Popoular by Day/Week/Month Filter with a dropdown menu-->
-        <div class="most-popular">
-            <h1>Most Popular</h1>
-            <label for="filter">Filter:</label>
-            <select name="most-popular-filter" id="filter">
-                <option value="day">Day</option>
-                <option value="week">Week</option>
-                <option value="month">Month</option>
-            </select>
-            <div class="content-box non-active" id="day">
-                <img src="images/placeholder.png" alt="most-popular">
-                <h2>Most Popular 1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-            </div>
-            <div class="content-box non-active" id="week">
-                <img src="images/placeholder.png" alt="most-popular">
-                <h2>Most Popular 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-            </div>
-            <div class="content-box non-active" id="month">
-                <img src="images/placeholder.png" alt="most-popular">
-                <h2>Most Popular 3</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-            </div>      
+      <!-- Most Popoular by Day/Week/Month Filter with a dropdown menu-->
+      <div class="most-popular">
+        <h1>Most Popular</h1>
+        <label for="filter">Filter:</label>
+        <select name="most-popular-filter" id="filter">
+          <option value="day">Day</option>
+          <option value="week">Week</option>
+          <option value="month">Month</option>
+        </select>
+        <div class="content-box non-active" id="day">
+          <img src="images/placeholder.png" alt="most-popular" />
+          <h2>Most Popular 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quae.
+          </p>
         </div>
-    <!-- Featured Review-->
-    <div class="featured-review">
+        <div class="content-box non-active" id="week">
+          <img src="images/placeholder.png" alt="most-popular" />
+          <h2>Most Popular 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quae.
+          </p>
+        </div>
+        <div class="content-box non-active" id="month">
+          <img src="images/placeholder.png" alt="most-popular" />
+          <h2>Most Popular 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quae.
+          </p>
+        </div>
+      </div>
+      <!-- Featured Review-->
+      <div class="featured-review">
         <h1>Featured Review</h1>
         <div class="content-box">
-            <img src="images/placeholder.png" alt="featured-review">
-            <h2>Featured Review 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+          <img src="images/placeholder.png" alt="featured-review" />
+          <h2>Featured Review 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quae.
+          </p>
         </div>
-    </div>
+      </div>
     </div>
     <footer>
-        <div class="logo">
-            <img src="images/placeholder.png" alt="logo">
-        </div>
+      <div class="logo">
+        <img src="images/placeholder.png" alt="logo" />
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>
