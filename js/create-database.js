@@ -1,5 +1,5 @@
 let indexDB = [];
-let htmlFiles = ["post1.html", "post2.html", "post3.html", "post4.html"];
+let htmlFiles = ["./posts/post1.html", "./posts/post2.html", "./posts/post3.html", "./posts/post4.html"];
 
 async function indexHTML(url) {
   fetch(url)
