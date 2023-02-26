@@ -1,9 +1,27 @@
 footer {
     display: flex;
     flex-direction: row;
+    color: #000F08;
+}
+footer .logo img {
+    max-width: 100%;
+    height: 80px;
+}
+.logo {
+    display: flex;
+    max-width: 40%;
     align-items: center;
-    justify-content: center;
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
+    margin-left: 2%;
+
+}
+.logo-text {
+    max-width: 60%;
+    margin-left: 3em;
+}
+footer #trademark {
+    font-size: 0.6em;
+    margin: 0px 0px 0px 0px;
+}
+footer #disclaimer {
+    font-size: 0.8em;
 }
