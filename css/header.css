@@ -3,7 +3,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    background-image: linear-gradient(#ffffff, rgba(99, 112, 129, 0.2));
     color: #52c17e;
     padding: 1em;
     border: red 3px solid;
@@ -35,6 +35,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    box-shadow: inset 0px 2px 4px 0px rgba(0,0,0,1);
+    border-radius: 5px;
   }
   
   header li {
