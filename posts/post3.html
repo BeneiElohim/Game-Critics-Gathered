@@ -1,24 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is a description." />
-    <meta name="keywords" content="action,game" />
-    <script src="js/search-form.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    <h1 id="title">God of War</h1>
-    <img src="images/placeholder.png" alt="" id="main-image" />
-    <div class="search">
-      <input
-        type="text"
-        placeholder="Search"
-        id="search-bar"
-        onkeydown="search(event)"
-      />
+    <meta name="keywords" content="new world,mmorpg">
+    <meta name="description" content="New World is a massively multiplayer online role-playing game developed by Amazon Game Studios and published by Amazon.">
+    <link rel="stylesheet" href="../css/main-post.css">
+</head>
+<body>
+     <!-- Header involving a search bar, logo and navigation -->
+     <header>
+        <div class="logo">
+            <img src="../images/placeholder.png" alt="logo">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
     </div>
-  </body>
+</header>
+<!-- two divs, one will have content box classes and will have suggested content, other will be a div that has other divs, these divs will include images, text, a pro/con table, and media at the end. These two big div's will be in a row position-->
+<div class="main-content">
+    <div class="left-content">
+        <h1 id="title">Celeste</h1>
+        <img src="images/placeholder.png" alt="" id="main-image" />    
+        <div class="content-box">
+            <img src="../images/placeholder.png" alt="latest-submission">
+            <h2>Latest Submission 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+        </div>
+        <div class="content-box">
+            <img src="../images/placeholder.png" alt="latest-submission">
+            <h2>Latest Submission 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+        </div>
+    </div>
+<div class="sidebar">
+    <h1 id="suggestion">Suggested Content</h1>
+    <div class="content-box">
+        <img src="../images/placeholder.png" alt="suggested-content">
+        <h2>Suggested Content 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+    </div>
+    <div class="content-box">
+        <img src="../images/placeholder.png" alt="suggested-content">
+        <h2>Suggested Content 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+    </div>   
+</div>
+</div> 
+</div>
+<footer>
+    <div class="logo">
+        <img src="../images/placeholder.png" alt="logo">
+    </div>
+</footer>
+</body>
 </html>

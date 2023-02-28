@@ -2,7 +2,6 @@
 @import "header.css";
 @import "content-box.css";
 @import "slideshow.css";
-@import "dropdown-menu.css";
 
 body {
     display: flex;
