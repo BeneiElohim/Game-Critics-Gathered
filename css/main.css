@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import "footer.css";
 @import "header.css";
 @import "content-box.css";
 @import "slideshow.css";
-
 body {
     display: flex;
     flex-direction: column;

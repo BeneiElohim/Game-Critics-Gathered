@@ -1,12 +1,15 @@
+
 header {
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-image: linear-gradient(#ffffff, rgba(99, 112, 129, 0.2));
-    color: #52c17e;
+    color: #60af05;
     padding: 1em;
     border: red 3px solid;
+    transition: border 0.5s ease-in-out;
     
 }
 header li {
@@ -32,10 +35,10 @@ header .logo img {
 }
 /* dropdown menu */
 ul {
-    margin: 0;
-    padding: 0;
+    margin: 1px;
+    padding: 1px;
     overflow: hidden;
-    box-shadow: inset 0px 2px 4px 0px rgba(0,0,0,1);
+    background-color: #000;
     border-radius: 5px;
   }
   
@@ -45,14 +48,17 @@ ul {
   
   header li a, .dropbtn {
     display: inline-block;
-    color: #000F08;
+    color: #60af05;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
   }
   
  header li a:hover, .dropdown:hover .dropbtn {
-    background-color: #52c17e;
+    border-left: 1px solid #60af05;
+    border-right: 1px solid #60af05;
   }
   
  header li.dropdown {
@@ -74,8 +80,10 @@ ul {
     text-decoration: none;
     display: block;
     text-align: left;
+    border: none;
+    transition: border-left 0.3s ease-in-out, border-right 0.3s ease-in-out;
   }
- header .dropdown-content a:hover {background-color: #f1f1f1;}
+ header .dropdown-content a:hover {background-color: #000;}
   
  header .dropdown:hover .dropdown-posts {
     display: block;
