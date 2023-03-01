@@ -7,7 +7,9 @@ let htmlFiles = ["./posts/post1.html",
  "./posts/post6.html",
  "./posts/post7.html",
  "./posts/post8.html",
- "./posts/post9.html",];
+ "./posts/post9.html",
+ "./posts/post10.html",
+ "./posts/post11.html",];
 
 async function indexHTML(url) {
   fetch(url)
