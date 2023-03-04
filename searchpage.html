@@ -14,7 +14,11 @@
     <!-- Header involving a search bar, logo and navigation -->
     <header>
       <div class="logo">
-        <img src="images/placeholder.png" alt="logo" />
+        <img src="images/logo/logo.png" alt="logo" />
+        <div class="logo-text">
+          <h1 class="gcg-headline">Game Critics Gathered</h1>
+          <h6 class="gcg-alt-text">Democratizing Game Criticism</h6>
+        </div>
       </div>
       <div class="search">
         <input
@@ -27,12 +31,20 @@
       <div class="navigation">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li class ="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Posts</a>
+            <div class="dropdown-posts">
+              <a href="#">Post 1</a>
+              <a href="#">Post 2</a>
+              <a href="#">Post 3</a>
+            </div>
+          </li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </header>
     <!-- Main content -->
+    <section>
     <main>
       <div class="search-results">
         <h1>Search Results</h1>
@@ -41,6 +53,7 @@
         </div>
       </div>
     </main>
+  </section>
     <!-- Footer -->
     <section>
       <footer>
@@ -54,3 +67,4 @@
         </div> 
       </footer>
     </section>
+  </body>
