@@ -15,7 +15,6 @@ async function indexHTML(url) {
   fetch(url)
     .then((response) => response.text())
     .then((html) => {
-      // Parse the HTML string as described in the previous answer
       let parser = new DOMParser();
       let doc = parser.parseFromString(html, "text/html");
       let keywords = doc.querySelector('meta[name="keywords"]').content;
