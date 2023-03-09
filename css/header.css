@@ -88,3 +88,21 @@ ul {
  header .dropdown:hover .dropdown-posts {
     display: block;
   }
+header .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 40%;
+}
+.search {
+  border: 6px solid #a08996;
+  border-radius: 5px;
+}
+.search input[type=text] {
+  padding: 6px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fffacd;
+}

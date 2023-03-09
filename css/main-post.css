@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
+
 * {
     border: red;
 }
@@ -33,4 +34,68 @@ section:nth-child(odd) {
 section:nth-child(even) {
     background-color: #ffffff;
     color: #000000;
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table {
+    width: 50%;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.page-image {
+    max-width: 40%;
+    height: auto;
+    
+}
+h2 {
+    text-align: center;
+}
+.post-title
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main-image {
+    max-width: 90%;
+    height: auto;
+}
+.content:nth-child(odd) {
+    flex-wrap: wrap-reverse;
+}
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    height: auto;
+}
+tr:nth-child(even)
+{
+    background-color: #52c17e;
+    color: #000000;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+.post-info {
+    font-size: small;
+    width: 200px;
+    height: auto;
+    align-self: flex-start;
+    justify-self: flex-start;
 }
