@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 @import "footer.css";
 @import "header.css";
 @import "content-box.css";
@@ -6,7 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
     font-size: 1.2em;
     line-height: 1.5em;
     color: #333;
@@ -24,13 +25,17 @@ body {
     padding: 0;
     width: 100%;
     height: auto;
-    border: 3px solid red;
     margin-bottom: 20px;
 }
 .top-picks {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(/images/main-page/ezio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    background-position: 50% 9%;
 }
 #top-picks-title {
     color:#ffffff;
@@ -43,9 +48,12 @@ body {
     padding: 0;
     width: 100%;
     height: auto;
-    border: 3px solid red;
     margin-bottom: 20px;
     justify-content: center;
+    background-image: url(/images/main-page/ori.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
 }
 .most-popular {
     display: flex;
@@ -53,6 +61,10 @@ body {
     align-items: center;
     width: 60%;
     height: auto;
+    background-image: url(/images/main-page/lulu.png);
+    background-position: left;
+    background-size: 32%;
+    background-repeat: no-repeat;
 }
 .featured-review {
     display: flex;
@@ -66,6 +78,10 @@ body {
     flex-direction: column;
     align-items: center;
     height: auto;
+    background-image: url(/images/main-page/kratos-thinking.png);
+    background-position: left;
+    background-size: 20%;
+    background-repeat: no-repeat;
 }
 section:nth-child(odd) {
     background-color: #52c17e;
@@ -76,4 +92,11 @@ section:nth-child(even) {
 }
 .search-result {
     background-color: #ffffff;
+}
+.top-picks-title {
+    width: 80%;
+    text-align: center;
+    background-color: aquamarine;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,1);
+    background-image: url(/images/main-page/bricks.PNG);
 }

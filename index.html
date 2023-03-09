@@ -13,7 +13,7 @@
     <script src="js/search-form.js" defer></script>
     <script src="js/create-database.js" defer></script>
     <script src="js/content.js" defer></script>
-    <script src="js/drop-posts.js" defer></script>
+    <script src="js/drop-posts.js" defer ></script>
   </head>
   <body>
     <!-- Header involving a search bar, logo and navigation -->
@@ -26,6 +26,7 @@
         </div>
       </div>
       <div class="search">
+        <img src="images/icons/search.svg"> 
         <input
           type="text"
           placeholder="Search"
@@ -36,15 +37,16 @@
       <div class="navigation">
         <ul>
           <li><a href="#">Home</a></li>
+          <li><a href="#">Submission</a></li>
           <li class ="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Posts</a>
+            <a href="javascript:void(0)" class="dropbtn">Reviews</a>
             <div class="dropdown-posts">
               <a href="#">Post 1</a>
               <a href="#">Post 2</a>
               <a href="#">Post 3</a>
             </div>
           </li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Report</a></li>
         </ul>
       </div>
     </header>
@@ -91,8 +93,10 @@
 
     <!-- Top Picks By the Team with Images and Descriptions-->
     <section>
-      <div class="top-picks">
-      <h1 id="top-picks-title">Top Picks</h1>
+    <div class="top-picks">
+        <div class="top-picks-title">
+          <h1 id="top-picks-title">Top Picks</h1>
+        </div>
       <div class="top-picks-content">
         <div class="content-box">
           <a class="link"><img src="images/placeholder.png" alt="latest-submission"/></a>
