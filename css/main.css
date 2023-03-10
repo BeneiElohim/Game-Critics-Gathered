@@ -26,6 +26,11 @@ body {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+    background-image: url(/images/main-page/fires.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 20%;
+    background-repeat: repeat-x;
 }
 .top-picks {
     display: flex;
@@ -34,11 +39,12 @@ body {
     background-image: url(/images/main-page/ezio.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 20%;
-    background-position: 50% 9%;
+    background-size: 20% ;
+    background-position: 50% 78px;
 }
+
 #top-picks-title {
-    color:#ffffff;
+    color:#000;
 }
 .bottom-content {
     display: flex;
@@ -83,20 +89,13 @@ body {
     background-size: 20%;
     background-repeat: no-repeat;
 }
-section:nth-child(odd) {
-    background-color: #52c17e;
-  } 
-section:nth-child(even) {
-    background-color: #ffffff;
-    color: #000000;
-}
+
 .search-result {
     background-color: #ffffff;
 }
 .top-picks-title {
     width: 80%;
     text-align: center;
-    background-color: aquamarine;
+    background-color: transparent;
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,1);
-    background-image: url(/images/main-page/bricks.PNG);
 }

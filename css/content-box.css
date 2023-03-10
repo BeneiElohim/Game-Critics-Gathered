@@ -7,7 +7,6 @@
     padding: 1em;
     width: 30%;
     height: auto;
-    background-color: #fff;
     margin-bottom: 20px;
 }
 .non-active {
@@ -16,4 +15,8 @@
 .content-box img {
     max-width: 800px;
     height: auto;
+}
+
+.top-picks-content .content-box {
+    width: 40%;
 }
