@@ -25,16 +25,16 @@ header .logo img {
     max-width: 100%;
     height: 125px;
 }
-.logo {
+header .logo {
     display: flex;
     max-width: 38%;
 }
-.logo-text {
+header .logo-text {
     max-width: 60%;
     margin-left: 3em;
 }
 /* dropdown menu */
-ul {
+ header ul {
   padding: 0px;
     display: flex;
     overflow: hidden;
@@ -96,6 +96,7 @@ header .navigation {
 }
 .search {
   display: flex;
+  flex-direction: row;
   border: 6px solid #a08996;
   background-color: #fffacd;
   border-radius: 5px;
@@ -114,17 +115,18 @@ header .navigation {
   height: 30px;
   border-radius: 5px;
   background-color: #fffacd;
+  cursor: pointer;
 }
-a {
+header a {
   color: #333;
   text-decoration: none;
   transition: color 0.3s ease;
 }
-a:hover {
+header a:hover {
   color: #183059;
 }
 
-a:hover ~ a {
+header a:hover ~ a {
   color: #333;
   background-color: #333;
 }

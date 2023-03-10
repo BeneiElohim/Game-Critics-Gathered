@@ -1,8 +1,9 @@
 footer {
     display: flex;
     flex-direction: row;
-    color: #183059;
-    background-color: #819595;
+    background-color: #444;
+    justify-content: flex-start;
+    align-items: center;
 }
 footer .logo img {
     max-width: 100%;
@@ -13,6 +14,7 @@ footer .logo img {
     max-width: 40%;
     align-items: center;
     margin-left: 2%;
+    color: #60af05;
 
 }
 .logo-text {
@@ -25,4 +27,24 @@ footer #trademark {
 }
 footer #disclaimer {
     font-size: 0.8em;
+}
+footer #details {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-self: center;
+    color:#eff6e9;
+    margin-left: 6%;
+    text-decoration: none;
+}
+#details li a {
+    font-size: 0.8em;
+    margin:  4px;
+    color: #183059;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+#details li a:hover {
+    color: #60af05
 }

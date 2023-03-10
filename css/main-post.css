@@ -2,25 +2,12 @@
 @import url("footer.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-
-
-* {
-    border: red;
-}
-
-
-img {
-    max-width: 10em;
-    height: auto;
-}
 body {
     display: flex;
     flex-direction: column;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
     font-size: 1.2em;
     line-height: 1.5em;
-    color: #333;
-    background-color: #fff;
     margin: 0;
     padding: 0;
 }
@@ -28,16 +15,10 @@ h1 {
     font-size: 2em;
     font-weight: bold;
 }
-section:nth-child(odd) {
-    background-color: #52c17e;
-  } 
-section:nth-child(even) {
-    background-color: #ffffff;
-    color: #000000;
-}
 .post {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 table {
@@ -48,14 +29,13 @@ table {
 .content {
     display: flex;
     flex-direction: row;
-    align-items: space-around;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .page-image {
-    max-width: 40%;
+    max-width: 750px;
     height: auto;
-    
+    margin-right: 20px;
 }
 h2 {
     text-align: center;
@@ -71,16 +51,13 @@ h2 {
     max-width: 90%;
     height: auto;
 }
-.content:nth-child(odd) {
-    flex-wrap: wrap-reverse;
-}
 .video {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 50%;
     height: auto;
+    margin-bottom: 20px;
 }
 tr:nth-child(even)
 {
@@ -94,8 +71,37 @@ table, th, td {
 }
 .post-info {
     font-size: small;
-    width: 200px;
+    width: 15%;
     height: auto;
     align-self: flex-start;
     justify-self: flex-start;
+}
+.title {
+    color: #F60;
+}
+.scoring {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.scoring:nth-child(even) {
+    background-color: #EFF6E9;
+}
+.scoring:nth-child(odd) {
+    background-color: #FFF9C7;
+}
+.post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
 }

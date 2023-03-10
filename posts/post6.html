@@ -1,66 +1,217 @@
+<!--Defining the document type-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="keywords" content="new world,mmorpg">
-    <meta name="description" content="New World is a massively multiplayer online role-playing game developed by Amazon Game Studios and published by Amazon.">
-    <link rel="stylesheet" href="../css/main-post.css">
+    <title>New World</title> <!--Defining the title to be used for search and filling up functionality-->
+    <meta name="keywords" content="new world,mmorpg"><!--Defining the keywords to be used for search functionality-->
+    <meta name="description" content="New World is a massively multiplayer online role-playing game developed by Amazon Game Studios and published by Amazon."> <!--Defining the description to pull in search page and index page-->
+    <link rel="stylesheet" href="../css/main-post.css"> <!--Linking the main-post.css file-->
+    <script src="../js/search-form.js" defer></script> <!--Linking the search-form.js file for the search bar to work-->
+    <script src="../js/create-database.js" defer></script> <!--Linking the create-database.js file so the indexDB variable can be created-->
 </head>
 <body>
-     <!-- Header involving a search bar, logo and navigation -->
+  <!-- Header involving a search bar, logo and navigation -->
      <header>
-        <div class="logo">
-            <img src="../images/placeholder.png" alt="logo">
+      <div class="logo">
+        <a href="../index.html"><img src="../images/logo/logo.png" alt="logo, game critics gathered"> </a>
+        <div class="logo-text">
+          <h1 class="gcg-headline">Game Critics Gathered</h1>
+          <h6 class="gcg-alt-text">Democratizing Game Criticism</h6>
         </div>
-        <div class="search">
-            <input type="text" placeholder="Search">
+      </div>
+      <div class="search"> <!--Search bar-->
+        <a><img src="../images/icons/search.svg" alt="a search icon" id="search-logo" onclick="search(event), buttonClicked = true"></a> <!--Search icon--> 
+        <input
+          type="text"
+          placeholder="Search"
+          id="search-bar"
+          onkeydown="search(event)"
+        >
+      </div>
+      <div class="navigation"> <!--Navigation bar-->
+        <ul>
+          <li><a href="../index.html">Home</a></li> <!--Home page-->
+          <li><a href="../submission.html">Submission</a></li> <!--Submission page-->
+          <li><a href="../searchpage.html">Search</a></li> <!--Search page-->
+          <li class ="dropdown"> <!--Reviews-->
+            <a href="javascript:void(0)" class="dropbtn">Reviews</a> 
+            <div class="dropdown-posts">
+              <a href="/posts/post1.html">Post 1</a>
+              <a href="/posts/post2.html">Post 2</a>
+              <a href="/posts/post3.html">Post 3</a>
+              <a href="/posts/post4.html">Post 4</a>
+              <a href="/posts/post5.html">Post 5</a>
+              <a href="/posts/post6.html">Post 6</a>
+              <a href="/posts/post7.html">Post 7</a>
+              <a href="/posts/post8.html">Post 8</a>
+              <a href="/posts/post9.html">Post 9</a>
+              <a href="/posts/post10.html">Post 10</a>
+              <a href="/posts/post11.html">Post 11</a>
+            </div>
+          </li>
+          <li><a href="../report.html">Report</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Main content of the page -->
+<div class="post"> 
+  <div class="post-title"> <!--Title div of the post-->
+    <h1 id="title">New World</h1> <!--Title of the post-->
+    <img id="main-image" src="../images/post1/main-image.jpg" alt="new world"> <!--Main image of the post, is used in search and main page-->
+      <div class="post-info"> <!--Information about the post-->
+        <p>By: <a href="#">Game Critic</a></p>
+        <p>Posted: 2021-09-01</p>
+      </div>
+  </div>
+  <div class="post-content">
+    <div class="scoring"> <!--Scoring div, encapsulated a category of scores-->
+      <h2 class="title">Gameplay Time</h2> <!--Title of the scoring div-->
+      <div id="gameplay" class="content">  <!--Content of the scoring div-->
+          <img class="page-image" src="../images/post1/new-world-1.jpg" alt="new world"> <!--Image of the game, related to the category-->
+          <table>
+            <tr>
+              <th>Is it?</th> 
+              <th>Answer</th>
+            <tr>
+              <td>Good progression?</td>
+              <td>Yes </td>
+            </tr>
+            <tr>
+              <td>Good difficulty curve</td>
+              <td>Yes </td>
+            </tr>
+            <tr>
+              <td>Good pacing?</td>
+              <td>Yes </td>
+            </tr>
+            <tr>
+              <td>Good endgame</td>
+              <td>Yes </td>
+            </tr>
+          </table>
+          </div>
+      </div>
+      <div class="scoring"> <!--Scoring div, encapsulated a category of scores-->
+        <h2 class="title">Graphics</h2> <!--Title of the scoring div-->
+        <div id="graphics" class="content"> <!--Content of the scoring div-->
+            <img class="page-image" src="../images/post1/new-world-1.jpg" alt="new world"> <!--Image of the game, related to the category-->
+            <table> <!--Table for the reviewer score-->
+              <tr>
+                <th>Is it?</th>
+                <th>Answer</th>
+              <tr>
+                <td>Good general view?</td>
+                <td>Yes </td>
+              </tr>
+              <tr>
+                <td>Good VFX?</td>
+                <td>Yes </td>
+              </tr>
+              <tr>
+                <td>Good lighting?</td>
+                <td>Yes </td>
+              </tr>
+              <tr>
+                <td>Good camera?</td>
+                <td>Yes </td>
+              </tr>
+            </table>
+            </div>
         </div>
-        <div class="navigation">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-    </div>
-</header>
-<!-- two divs, one will have content box classes and will have suggested content, other will be a div that has other divs, these divs will include images, text, a pro/con table, and media at the end. These two big div's will be in a row position-->
-<div class="main-content">
-    <div class="left-content">
-        <h1 id="title">TES V Skyrim</h1>
-        <img src="images/placeholder.png" alt="" id="main-image" />    
-        <div class="content-box">
-            <img src="../images/placeholder.png" alt="latest-submission">
-            <h2>Latest Submission 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-        </div>
-        <div class="content-box">
-            <img src="../images/placeholder.png" alt="latest-submission">
-            <h2>Latest Submission 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-        </div>
-    </div>
-<div class="sidebar">
-    <h1 id="suggestion">Suggested Content</h1>
-    <div class="content-box">
-        <img src="../images/placeholder.png" alt="suggested-content">
-        <h2>Suggested Content 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-    </div>
-    <div class="content-box">
-        <img src="../images/placeholder.png" alt="suggested-content">
-        <h2>Suggested Content 2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-    </div>   
+        <div class="scoring"> <!--Scoring div, encapsulated a category of scores-->
+          <h2 class="title">Sounds</h2> <!--Title of the scoring div-->
+          <div id="sounds" class="content"> <!--Content of the scoring div-->
+              <img class="page-image" src="../images/post1/new-world-1.jpg" alt="new world"> <!--Image of the game, related to the category-->
+              <table> <!--Table for the reviewer score-->
+                <tr>
+                  <th>Is it?</th>
+                  <th>Answer</th>
+                <tr>
+                  <td>Good theme sounds</td>
+                  <td>Yes </td>
+                </tr>
+                <tr>
+                  <td>Good SFX?</td>
+                  <td>Yes </td>
+                </tr>
+                <tr>
+                  <td>Good combat sounds?</td>
+                  <td>Yes </td>
+                </tr>
+                <tr>
+                  <td>Good narration?</td>
+                  <td>Yes </td>
+                </tr>
+              </table>
+              </div>
+          </div>
+          <div class="scoring"> <!--Scoring div, encapsulated a category of scores-->
+            <h2 class="title">Replayability</h2> <!--Title of the scoring div-->
+            <div id="replayability" class="content"> <!--Content of the scoring div-->
+                <img class="page-image" src="../images/post1/new-world-1.jpg" alt="new world"> <!--Image of the game, related to the category-->
+                <table> <!--Table for the reviewer score-->
+                  <tr>
+                    <th>Is it?</th>
+                    <th>Answer</th>
+                  <tr>
+                    <td>Good decision effects?</td>
+                    <td>Yes </td>
+                  </tr>
+                  <tr>
+                    <td>Good playstyles?</td>
+                    <td>Yes </td>
+                  </tr>
+                  <tr>
+                    <td>Good multiplayer?</td>
+                    <td>Yes </td>
+                  </tr>
+                  <tr>
+                    <td>No unskippable cutscenes?</td>
+                    <td>Yes </td>
+                  </tr>
+                </table>
+                </div>
+            </div>
 </div>
-</div> 
 </div>
-<footer>
-    <div class="logo">
-        <img src="../images/placeholder.png" alt="logo">
+    <div class="review"> <!--Review div, encapsulated the review of the game-->
+      <h1>Review</h1> <!--Title of the review-->
+      <p> 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+        consectetur, nisl vitae ultricies lacinia, nisl nisl aliquet nisl, nec
+        tincidunt nisl nisl eget nisl. Donec euismod, nisl eget aliquam
+      </p>
     </div>
-</footer>
+        <div class="video"> <!--Needs a teaser video link-->
+          <h1>Teaser</h1>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/1Q2kH5xZjuk"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <footer> <!--Footer of the page-->
+          <div class="logo"> <!--Logo of the GCG--> 
+            <img src="../images/logo/logo.png" alt="logo"> 
+            <div class="logo-text">
+              <h1 class="gcg-headline">Game Critics Gathered</h1> 
+              <h6 class="gcg-alt-text">Democratizing Game Criticism</h6>
+              <p id="trademark">© 2023 Game Critics Gathered. <br> <span id="disclaimer"> Authors are responsible of opinions on Game Critics Gathered. </span></p>
+            </div>
+          </div> 
+            <ul id="details"> <!--Details of the page-->
+              <li><a href="../index.html">Home</a></li>
+              <li><a id="all-posts" onclick="showAllPosts()">Posts</a></li> <!--An archive button, redirects to the searchpage with a keyword all the posts have-->
+              <li><a href="../submission.html">Submission</a></li> <!--A submission button, redirects to the submission page-->
+              <li><a href="../agenda.html">Agenda</a></li> <!--An agenda button, redirects to the agenda page-->
+              <li><a href="../report.html">Report</a></li>
+            </ul> 
+        </footer>
 </body>
 </html>

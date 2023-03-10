@@ -12,7 +12,6 @@
     <script src="js/search-form.js" defer></script>
     <script src="js/create-database.js" defer></script>
     <script src="js/content.js" defer></script>
-    <script src="js/drop-posts.js" defer ></script>
   </head>
   <body>
     <!-- Header involving a search bar, logo and navigation -->
@@ -24,8 +23,7 @@
           <h6 class="gcg-alt-text">Democratizing Game Criticism</h6>
         </div>
       </div>
-      <div class="search">
-        <img src="images/icons/search.svg"> 
+      <div class="search">        <a><img src="../images/icons/search.svg" alt="a search icon" id="search-logo" onclick="search(event), buttonClicked = true"></a>
         <input
           type="text"
           placeholder="Search"
@@ -208,6 +206,13 @@
           <p id="trademark">© 2023 Game Critics Gathered. <br> <span id="disclaimer"> Authors are responsible of opinions on Game Critics Gathered. </span></p>
         </div>
       </div> 
+        <ul id="details">
+          <li><a href="./index.html">Home</a></li>
+          <li><a id="all-posts" onclick="showAllPosts()">Posts</a></li>
+          <li><a href="./submission.html">Submission</a></li>
+          <li><a href="./agenda.html">Agenda</a></li>
+          <li><a href="./report.html">Report</a></li>
+        </ul> 
     </footer>
   </section>
   </body>
