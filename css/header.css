@@ -6,8 +6,8 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-image: linear-gradient(#ffffff, rgba(10,229,190,0.3));
-    color: #60af05;
+    background-color: #819595;
+    color: #183059;
     padding: 1em;
     transition: border 0.5s ease-in-out;
     
@@ -121,7 +121,7 @@ a {
   transition: color 0.3s ease;
 }
 a:hover {
-  color: #f00;
+  color: #183059;
 }
 
 a:hover ~ a {

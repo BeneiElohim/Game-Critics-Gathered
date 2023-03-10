@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Critics Gathered</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="import" href="component.html" />
     <meta name="keywords" content="roguelike,game" />
     <script src="js/slideshow.js" defer></script>
     <script src="js/dropdown.js" defer></script>
@@ -36,8 +35,9 @@
       </div>
       <div class="navigation">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Submission</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./submission.html">Submission</a></li>
+          <li><a href="./searchpage.html">Search</a></li>
           <li class ="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Reviews</a>
             <div class="dropdown-posts">
@@ -54,14 +54,16 @@
               <a href="/posts/post11.html">Post 11</a>
             </div>
           </li>
-          <li><a href="#">Report</a></li>
+          <li><a href="./report.html">Report</a></li>
         </ul>
       </div>
     </header>
     <!--Latest Submissions Div with a Slideshow for Posts -->
     <section>
       <div class="latest-submissions">
-      <h1 id="latest-title">Latest Submissions</h1>
+      <div class="latest-submissions-title section-title">
+        <h1 id="latest-title">Latest Submissions</h1>
+      </div>
       <div class="slide-wrapper">
           <a class="prev arrow" onclick="changeSlide(-1)"
             ><img src="/images/icons/previous.png" alt="left-arrow" />
@@ -102,7 +104,7 @@
     <!-- Top Picks By the Team with Images and Descriptions-->
     <section>
     <div class="top-picks">
-        <div class="top-picks-title">
+        <div class="top-picks-title section-title">
           <h1 id="top-picks-title">Top Picks</h1>
         </div>
       <div class="top-picks-content">
@@ -146,7 +148,9 @@
     <div class="bottom-content">
       <!-- Most Popoular by Day/Week/Month Filter with a dropdown menu-->
       <div class="most-popular">
-        <h1>Most Popular</h1>
+        <div class="most-popular-title section-title">
+          <h1>Most Popular</h1>
+        </div>
         <label for="filter">Filter:</label>
         <select name="most-popular-filter" id="filter">
           <option value="day">Day</option>
@@ -180,7 +184,9 @@
       </div>
       <!-- Featured Review-->
       <div class="featured-review">
-        <h1>Featured Review</h1>
+        <div class="featured-review-title section-title">
+          <h1>Featured Review</h1>
+        </div>
         <div class="content-box">
           <a class="link"><img src="images/placeholder.png" alt="latest-submission"/></a>
             <h2 class="title">Latest Submission 1</h2>

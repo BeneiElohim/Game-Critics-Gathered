@@ -8,6 +8,7 @@
     width: 30%;
     height: auto;
     margin-bottom: 20px;
+    background-color: #EFF6E9;
 }
 .non-active {
     display: none;

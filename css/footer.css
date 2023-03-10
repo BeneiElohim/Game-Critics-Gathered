@@ -1,7 +1,8 @@
 footer {
     display: flex;
     flex-direction: row;
-    color: #000F08;
+    color: #183059;
+    background-color: #819595;
 }
 footer .logo img {
     max-width: 100%;
