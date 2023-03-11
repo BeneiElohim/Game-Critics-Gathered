@@ -29,6 +29,7 @@ header .logo img {
 header .logo {
     display: flex;
     max-width: 38%;
+    color: #183059;
 }
 header .logo-text {
     max-width: 60%;

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import "footer.css";
+@import "header.css";
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+.faq {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.faq-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+#question-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/faq/sonic.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: 12%;
+}
+.faq-title p {
+    align-self: flex-start;
+    font-weight: bold;
+    color: #F60;
+    margin-left: 40px;
+}
+.question-title {
+    text-decoration: underline;
+    padding: 0;
+    cursor: pointer;
+    color: #183059;
+}
+.question:nth-child(odd) {
+    background-color: #EFF6E9;
+}
+.question:nth-child(even) {
+    background-color: #F6F6F6;
+}
+.question {
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    margin: 20px
+}
+.question-answer {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .question-answer {
+        display:block;
+    }
+  }
