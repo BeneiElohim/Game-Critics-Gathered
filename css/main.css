@@ -81,10 +81,6 @@ body {
     background-size: 20%;
     background-repeat: no-repeat;
 }
-
-.search-result {
-    background-color: #ffffff;
-}
 .top-picks-title {
     width: 80%;
     text-align: center;
@@ -96,4 +92,25 @@ body {
 .section-title {
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,1);
     margin-bottom: 1px;
+}
+/* Search Page */
+.search-result-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+}
+.search-result-page img {
+    width: 40%;
+    height: auto;
+}
+.search-results-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }

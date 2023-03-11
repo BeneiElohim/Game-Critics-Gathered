@@ -2,11 +2,12 @@
 header {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
+    line-height: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #819595;
+    background-color: #E8C7DE;
     color: #183059;
     padding: 1em;
     transition: border 0.5s ease-in-out;
@@ -90,7 +91,7 @@ header .logo-text {
   }
 header .navigation {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     max-width: 40%;
 }
@@ -129,4 +130,9 @@ header a:hover {
 header a:hover ~ a {
   color: #333;
   background-color: #333;
+}
+#navbutton {
+  width: 20%;
+  height: auto;
+  align-self: flex-end;
 }

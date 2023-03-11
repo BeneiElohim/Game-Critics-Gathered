@@ -1,8 +1,9 @@
 footer {
     display: flex;
     flex-direction: row;
-    background-color: #444;
+    background-color: #DBF9F4;
     justify-content: flex-start;
+    line-height: 1;
     align-items: center;
 }
 footer .logo img {
