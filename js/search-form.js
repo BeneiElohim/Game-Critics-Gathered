@@ -12,7 +12,7 @@ function search(e) {
 }
 let allPosts = document.getElementById("all-posts");
 function showAllPosts() {
-  sessionStorage.setItem("searchInput", "mmorpg");
+  sessionStorage.setItem("searchInput", "game");
   window.location.href = "../searchpage.html";
 }
 
