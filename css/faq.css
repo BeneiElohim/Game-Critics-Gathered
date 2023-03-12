@@ -45,6 +45,7 @@ body {
     height: auto;
     margin: 0;
     padding: 0;
+    background-color: transparent;
     background-image: url(../images/faq/sonic.jpg);
     background-repeat: no-repeat;
     background-position: 0% 50%;

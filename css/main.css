@@ -12,7 +12,7 @@ body {
     line-height: 1.5em;
     margin: 0;
     padding: 0;
-    background-color: #fdfdfd;
+    background-color: #fffafa;
 }
 
 .top-picks-content {
@@ -115,6 +115,9 @@ body {
     margin: 0;
     padding: 0;
 }
+#filter {
+    border-radius: 2px;
+}
 /* https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #scrollbutton {
     display: none; /* Hidden by default */
@@ -135,4 +138,14 @@ body {
   
   #scrollbutton:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  @media only screen and (max-width: 600px) {
+    .bottom-content {
+        flex-direction: column;
+        background-image: none;
+    }
+    .bottom-content .content-box {
+        width: 100%;
+    }
   }

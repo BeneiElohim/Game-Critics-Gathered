@@ -14,7 +14,6 @@
     <script src="js/search-form.js" defer></script>
     <script src="js/create-database.js" defer></script>
     <script src="js/content.js" defer></script>
-    <script src="js/navigation.js" defer></script>
   </head>
   <body>
     <!-- Header involving a search bar, logo and navigation -->
@@ -35,7 +34,6 @@
         />
       </div>
       <div class="navigation">
-      <button id="navbutton"> <img src="../images/icons/search.svg" alt="toggle button for nagivation with arrow keys."></button>
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./submission.html">Submission</a></li>
@@ -220,5 +218,7 @@
         </ul> 
     </footer>
   </section>
+  <button id="dark-toggle" onclick=darkModeToggle()><img src="../images/icons/dark-mode-icon.png" alt="dark mode button"></button>
+  <script src="js/dark-mode.js"></script>
   </body>
 </html>

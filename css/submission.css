@@ -20,6 +20,7 @@ body {
     height: auto;
     margin: 0;
     padding: 0;
+    background-color: transparent;
     background-image: url("../images/submission/mario.png");
     background-repeat: no-repeat;
     background-position: 0% 10%;
@@ -106,4 +107,20 @@ body {
   
   #scrollbutton:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  @media only screen and (max-width: 900px) {
+    .rule-list {
+        width: 80%;
+    }
+    .submission-step {
+        width: 80%;
+    }
+    .download {
+        width: 80%;
+    }
+    #submission {
+        background-size: 20%;
+        background-position: 0% 3%;
+    }
   }

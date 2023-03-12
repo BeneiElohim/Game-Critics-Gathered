@@ -10,12 +10,6 @@
     align-items: center;
     width: 100%;
     height: auto;
-    background-color: #fff;
-
-}
-.slide-show .content-box {
-    width: 100%;
-    height: auto;
 }
 .fade {
     animation-name: fade;

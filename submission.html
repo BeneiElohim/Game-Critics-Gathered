@@ -8,6 +8,7 @@
     <title>Submission</title> <!--Defining the title to be used for search and filling up functionality-->
     <link rel="shortcut icon" type="image/x-icon" href="../images/logo/icon32.ico" />
     <link rel="stylesheet" href="../css/submission.css"> <!--Linking the main-post.css file-->
+    <script src="../js/scrollbutton.js" defer></script> <!--Linking the scrollbutton.js file so the scroll button can be created-->
     <script src="../js/visibility-toggle.js" defer ></script> <!--Linking the visibility-toggle.js file for the dropdown menu to work-->
     <script src="../js/search-form.js" defer></script> <!--Linking the search-form.js file for the search bar to work-->
     <script src="../js/create-database.js" defer></script> <!--Linking the create-database.js file so the indexDB variable can be created-->
@@ -58,8 +59,8 @@
     </header>
     <!-- Main content of the page -->
     <main id="submission">
-      <h1>So, you would like to submit to GCG? This is the page for you!</h1>
-      <p>Before you submit, please read the following:</p>
+      <h1 id="submission-title">So, you would like to submit to GCG? This is the page for you!</h1>
+      <p id="submission-text">Before you submit, please read the following:</p>
       <div id="submission-guide">
       <div class="rule-list">
       <ul class="guidelines">
@@ -162,5 +163,7 @@
               <li><a href="../report.html">Report</a></li>
             </ul> 
         </footer>
+        <button id="dark-toggle" onclick=darkModeToggle()><img src="../images/icons/dark-mode-icon.png" alt="dark mode button"></button>
+        <script src="../js/dark-mode.js"></script>
 </body>
 </html>

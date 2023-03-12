@@ -1,33 +1,62 @@
+/* ///////////////////////// */
+/* Content Box Stylesheet */
+/* ///////////////////////// */
+/* Content boxes are boxes that holds a paragraph, a title and an image. */
+/* They are used in the top picks, bottom content and slide show sections. */
+/* ///////////////////////// */
+
+
 .content-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    margin: 1em;
-    padding: 1em;
-    width: 30%;
-    height: auto;
-    margin-bottom: 20px;
-    background-color: #EFF6E9;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    align-items: center; /* Center the content */
+    justify-items: center; /* Center the content */
+    margin: 1em; /* Add some breathing space between the boxes */
+    padding: 1em; /* Add some breathing space between the box content and border */
+    width: 30%; /* Set the width of the box in relation to the parent section */
+    height: auto; 
+    margin-bottom: 20px; /* Add some extra space to the bottom */
+    background-color: #EFF6E9; /* Set the background color */
+    border-radius: 5px; /* Round the corners */
 }
 .non-active {
-    display: none;
+    display: none; /* Hide the box  when it has a non-active class */
 }
-.content-box img {
-    max-width: 800px;
-    height: auto;
+.content-box img { /* Set the image size */
+    max-width: 800px; /* Set the max width of the image */
+    height: auto; 
 }
 
-.top-picks-content .content-box {
+.top-picks-content .content-box { /* Set the width of the top picks content boxes */
     width: 40%;
 }
-.top-picks-content .content-box img {
+.top-picks-content .content-box img { /* Set the width of the top picks content box images */
     width: 100%;
     height: 30%;
 }
-.bottom-content .content-box {
+.bottom-content .content-box { /* Set the width of the bottom content boxes */
     width: 40%;
 }
-.bottom-content .content-box img {
+.bottom-content .content-box img { /* Set the width of the bottom content box images */
     width: 100%;
+}
+.slide-show .content-box { /* Set the width of the slide show content boxes */
+    width: 90%;
+    height: auto;
+}
+.slide-show .content-box img { /* Set the width of the slide show content box images */
+    width: 100%;
+    height: auto;
+}
+/* Setting the width of the boxes in smaller screens for usability.  */
+@media only screen and (max-width: 700px) {
+    .top-picks-content .content-box {
+        width: 90%;
+    }
+    .bottom-content .content-box {
+        width: 90%;
+    }
+    .slide-show .content-box {
+        width: 90%;
+    }
 }

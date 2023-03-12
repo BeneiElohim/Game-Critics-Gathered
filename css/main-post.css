@@ -10,6 +10,7 @@ body {
     line-height: 1.5em;
     margin: 0;
     padding: 0;
+    background-color: #fffafa;
 }
 h1 {
     font-size: 2em;
@@ -31,9 +32,10 @@ table {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    width: 30%;
 }
 .page-image {
-    max-width: 750px;
+    max-width: 100%;
     height: auto;
     margin-right: 20px;
 }
@@ -48,7 +50,7 @@ h2 {
     align-items: center;
 }
 #main-image {
-    max-width: 900px;
+    max-width: 700px;
     height: auto;
 }
 .video {
@@ -74,7 +76,6 @@ table, th, td {
     width: 15%;
     height: auto;
     align-self: flex-start;
-    justify-self: flex-start;
 }
 .title {
     color: #F60;
