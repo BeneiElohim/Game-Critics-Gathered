@@ -16,9 +16,12 @@ const titleId = document.getElementById("title"); //get the element with the id 
 const review = document.getElementsByClassName("review")[0]; //get the element with the class review
 const postInfo = document.getElementsByClassName("post-info")[0]; //get the element with the class post-info
 const sectionTitle = [...document.getElementsByClassName("section-title")]; //get all the elements with the class section-title and store them in an array
-const h1 = document.getElementById("submission-title"); //get the element with the id submission-title
+const titleSubmission = document.getElementById("submission-title"); //get the element with the id submission-title
 const submissionText = document.getElementById("submission-text"); //get the element with the id submission-text
-
+const paragraph = [...document.getElementsByTagName("p")]; //get all the elements with the tag p and store them in an array
+const h1 = [...document.getElementsByTagName("h1")]; //get all the elements with the tag h1 and store them in an array
+const h2 = [...document.getElementsByTagName("h2")]; //get all the elements with the tag h2 and store them in an array
+const li = [...document.getElementsByTagName("li")]; //get all the elements with the tag li and store them in an array
 //check if dark mode is enabled, if it is, run the darkMode function.
 if (localStorage.getItem("darkMode") === "true") {
     darkMode();
@@ -119,12 +122,44 @@ function darkMode() {
         console.log(error);
     }
     try {
-        h1.style.color = "#ffffff";
+        titleSubmission.style.color = "#ffffff";
     } catch (error) {
         console.log(error);
     }
     try {
         submissionText.style.color = "#ffffff";
+    }
+    catch (error) {
+        console.log(error);
+    }
+    try {
+        paragraph.forEach(element => {
+            element.style.color = "#ffffff";
+        });
+    }
+    catch (error) {
+        console.log(error);
+    }
+    try {
+        h1.forEach(element => {
+            element.style.color = "#ffffff";
+        });
+    }
+    catch (error) {
+        console.log(error);
+    }
+    try {
+        h2.forEach(element => {
+            element.style.color = "#ffffff";
+        });
+    }
+    catch (error) {
+        console.log(error);
+    }
+    try {
+        li.forEach(element => {
+            element.style.color = "#ffffff";
+        });
     }
     catch (error) {
         console.log(error);
