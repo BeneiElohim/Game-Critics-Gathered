@@ -137,4 +137,66 @@ table, th, td {
   #scrollbutton:hover {
     background-color: #8b8888; /* Change the background color on hover. */
   }
-
+/*    REPORT STYLING    */
+#report {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+#student-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+#student-info p {
+    font-weight: bold;
+}
+#introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+#info-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.evaluation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}

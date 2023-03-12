@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New World</title> <!--Defining the title to be used for search and filling up functionality-->
-    <meta name="keywords" content="new world,mmorpg,game"><!--Defining the keywords to be used for search functionality-->
-    <meta name="description" content="New World is a massively multiplayer online role-playing game developed by Amazon Game Studios and published by Amazon."> <!--Defining the description to pull in search page and index page-->
+    <title>Report</title> <!--Defining the title to be used for search and filling up functionality-->
     <link rel="stylesheet" href="../css/main-post.css"> <!--Linking the main-post.css file-->
+    <link rel="favicon" type="image/x-icon" href="../images/logo/icon32.ico" />
     <script src="../js/search-form.js" defer></script> <!--Linking the search-form.js file for the search bar to work-->
     <script src="../js/create-database.js" defer></script> <!--Linking the create-database.js file so the indexDB variable can be created-->
     <script src="../js/scrollbutton.js" defer></script> <!--Linking the scrollbutton.js file so the scroll button can be created-->
@@ -57,138 +56,79 @@
         </ul>
       </div>
     </header>
-    <!-- Main content of the page -->
-<div class="post"> 
-  <div class="post-title"> <!--Title div of the post-->
-    <h1 id="title">New World</h1> <!--Title of the post-->
-    <img id="main-image" src="../images/post1/main-image.jpg" alt="new world"> <!--Main image of the post, is used in search and main page-->
-      <div class="post-info"> <!--Information about the post-->
-        <p>By: <a href="#">Game Critic</a></p>
-        <p>Posted: 2021-09-01</p>
+    <main id="report">
+      <div id="student-info">
+      <h1>Game Critics Gathered Report</h1>
+      <h2>Student Information</h2>
+      <p>Student Name: <span class="info">Ismail Mert Tarihci</span></p>
+      <p>Student Number: <span class="info"> 220299422</span></p>
+      <p>Candidate Number <span class="info"> EX1394</span> </p>
       </div>
-  </div>
-  <div class="post-content">
-    <div class="scoring"> <!--Scoring div, encapsulated a category of scores-->
-      <h2 class="title">Gameplay Time</h2> <!--Title of the scoring div-->
-      <div id="gameplay" class="content">  <!--Content of the scoring div-->
-          <img class="page-image" src="../images/post1/new-world-1.jpg" alt="new world"> <!--Image of the game, related to the category-->
-          <table>
-            <tr>
-              <th>Is it?</th> 
-              <th>Answer</th>
-            <tr>
-              <td>Good progression?</td>
-              <td>Yes </td>
-            </tr>
-            <tr>
-              <td>Good difficulty curve</td>
-              <td>Yes </td>
-            </tr>
-            <tr>
-              <td>Good pacing?</td>
-              <td>No </td>
-            </tr>
-            <tr>
-              <td>Good endgame</td>
-              <td>No </td>
-            </tr>
-          </table>
-          </div>
+      <div id="introduction">
+        <h2>Introduction</h2>
+        <p>Game Critics Gathered is a website that aims to democratize game criticism. It is a website that allows users to submit their own game reviews and share them with the world. The website is designed to be easy to use and accessible to everyone. The website is also designed to be responsive and work on all devices. The
       </div>
-      <div class="scoring"> <!--Scoring div, encapsulated a category of scores-->
-        <h2 class="title">Graphics</h2> <!--Title of the scoring div-->
-        <div id="graphics" class="content"> <!--Content of the scoring div-->
-            <img class="page-image" src="../images/post1/new-world-2.jpg" alt="new world"> <!--Image of the game, related to the category-->
-            <table> <!--Table for the reviewer score-->
-              <tr>
-                <th>Is it?</th>
-                <th>Answer</th>
-              <tr>
-                <td>Good general view?</td>
-                <td>Yes </td>
-              </tr>
-              <tr>
-                <td>Good VFX?</td>
-                <td>Yes </td>
-              </tr>
-              <tr>
-                <td>Good lighting?</td>
-                <td>Yes </td>
-              </tr>
-              <tr>
-                <td>Good camera?</td>
-                <td>Yes </td>
-              </tr>
-            </table>
-            </div>
+      <div id = "info-wrapper">
+        <div class = "info-block">
+          <h1 class="info-title"> Inspiration </h1>
+          <ol>
+            <li> <a href="https://www.youtube.com/watch?v=Q8TXgCzxEnw">https://www.youtube.com/watch?v=Q8TXgCzxEnw</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=Q8TXgCzxEnw">https://www.youtube.com/watch?v=Q8TXgCzxEnw</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=Q8TXgCzxEnw">https://www.youtube.com/watch?v=Q8TXgCzxEnw</a> </li>
+          </ol>
         </div>
-        <div class="scoring"> <!--Scoring div, encapsulated a category of scores-->
-          <h2 class="title">Sounds</h2> <!--Title of the scoring div-->
-          <div id="sounds" class="content"> <!--Content of the scoring div-->
-              <img class="page-image" src="../images/post1/new-world-3.jpg" alt="new world"> <!--Image of the game, related to the category-->
-              <table> <!--Table for the reviewer score-->
-                <tr>
-                  <th>Is it?</th>
-                  <th>Answer</th>
-                <tr>
-                  <td>Good theme sounds</td>
-                  <td>Yes </td>
-                </tr>
-                <tr>
-                  <td>Good SFX?</td>
-                  <td>Yes </td>
-                </tr>
-                <tr>
-                  <td>Good combat sounds?</td>
-                  <td>Yes </td>
-                </tr>
-                <tr>
-                  <td>Good narration?</td>
-                  <td>Yes </td>
-                </tr>
-              </table>
-              </div>
-          </div>
-          <div class="scoring"> <!--Scoring div, encapsulated a category of scores-->
-            <h2 class="title">Replayability</h2> <!--Title of the scoring div-->
-            <div id="replayability" class="content"> <!--Content of the scoring div-->
-                <img class="page-image" src="../images/post1/new-world-4.jpg" alt="new world"> <!--Image of the game, related to the category-->
-                <table> <!--Table for the reviewer score-->
-                  <tr>
-                    <th>Is it?</th>
-                    <th>Answer</th>
-                  <tr>
-                    <td>Good decision effects?</td>
-                    <td>No </td>
-                  </tr>
-                  <tr>
-                    <td>Good playstyles?</td>
-                    <td>Yes </td>
-                  </tr>
-                  <tr>
-                    <td>Good multiplayer?</td>
-                    <td>Yes </td>
-                  </tr>
-                  <tr>
-                    <td>No unskippable cutscenes?</td>
-                    <td>Yes </td>
-                  </tr>
-                </table>
-                </div>
-            </div>
-</div>
-</div>
-    <div class="review"> <!--Review div, encapsulated the review of the game-->
-      <h1>Review</h1> <!--Title of the review-->
-      <p> 
-        With a good amount of content for players to enjoy, New World brings a plethore of playstyles, amazing sounds
-        and great visuals. I only wish that the game had a better endgame, but it's still a great game to play with friends.
-      </p>
-    </div>
-        <div class="video"> <!--Needs a teaser video link-->
-          <h1>Teaser</h1>
-          <iframe width="858" height="483" src="https://www.youtube.com/embed/m1C5dLnvlzg" title="New World - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class = "info-block">
+          <h1 class="info-title"> Usability </h1>
+          <ol>
+            <li> <a href="https://www.youtube.com/watch?v=Q8TXgCzxEnw">https://www.youtube.com/watch?v=Q8TXgCzxEnw</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=Q8TXgCzxEnw">https://www.youtube.com/watch?v=Q8TXgCzxEnw</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=Q8TXgCzxEnw">https://www.youtube.com/watch?v=Q8TXgCzxEnw</a> </li>
+          </ol>
         </div>
+        <div class = "info-block">
+          <h1 class="info-title"> Accessibility </h1>
+          <ol>
+            <li> <a href="https://www.youtube.com/watch?v=Q8TXgCzxEnw">https://www.youtube.com/watch?v=Q8TXgCzxEnw</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=Q8TXgCzxEnw">https://www.youtube.com/watch?v=Q8TXgCzxEnw</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=Q8TXgCzxEnw">https://www.youtube.com/watch?v=Q8TXgCzxEnw</a> </li>
+          </ol>
+        </div>
+        <div class = "info-block">
+          <h1 class="info-title"> Learning </h1>
+          <ol>
+            <li> <a href="https://www.youtube.com/watch?v=Q8TXgCzxEnw">https://www.youtube.com/watch?v=Q8TXgCzxEnw</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=Q8TXgCzxEnw">https://www.youtube.com/watch?v=Q8TXgCzxEnw</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=Q8TXgCzxEnw">https://www.youtube.com/watch?v=Q8TXgCzxEnw</a> </li>
+          </ol>
+        </div>
+      </div>
+      <div class="evaluation">
+        <h1> Evaluation 1</h1>
+        <ol>
+          <li></li>
+        </ol>
+      </div>
+      <div class="evaluation">
+        <h1> Evaluation 2</h1>
+        <ol>
+          <li></li>
+        </ol>
+      </div>
+      <div class="evaluation">
+        <h1> Resources</h1>
+        <ol>
+          <li></li>
+        </ol>
+      </div>
+      <div class="evaluation">
+        <h1> Appendices</h1>
+        <ol>
+          <li></li>
+        </ol>
+      </div>
+
+
+      </main>
         <button onclick="scrollToTop()" id="scrollbutton" title="Go to top">Top</button>
         <footer> <!--Footer of the page-->
           <div class="logo"> <!--Logo of the GCG--> 
