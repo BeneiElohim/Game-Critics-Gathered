@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/main-post.css"> <!--Linking the main-post.css file-->
     <script src="../js/search-form.js" defer></script> <!--Linking the search-form.js file for the search bar to work-->
     <script src="../js/create-database.js" defer></script> <!--Linking the create-database.js file so the indexDB variable can be created-->
+    <script src="../js/scrollbutton.js" defer></script> <!--Linking the scrollbutton.js file so the scroll button can be created-->
 </head>
 <body>
   <!-- Header involving a search bar, logo and navigation -->
@@ -188,6 +189,7 @@
           <h1>Teaser</h1>
           <iframe width="858" height="483" src="https://www.youtube.com/embed/m1C5dLnvlzg" title="New World - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+        <button onclick="scrollToTop()" id="scrollbutton" title="Go to top">Top</button>
         <footer> <!--Footer of the page-->
           <div class="logo"> <!--Logo of the GCG--> 
             <img src="../images/logo/logo.png" alt="logo"> 
