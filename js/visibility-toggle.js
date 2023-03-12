@@ -1,6 +1,7 @@
 const questions = Array.from(document.getElementsByClassName("question-link"));
 const answers = Array.from(document.getElementsByClassName("question-answer"));
 for (let i = 0; i < questions.length; i++) {
+    answers[i].style.display = "none";
     questions[i].addEventListener("click", function () {
         if (answers[i].style.display === "none") {
             answers[i].style.display = "block";
