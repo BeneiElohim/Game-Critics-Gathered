@@ -87,18 +87,19 @@ body {
     justify-content: center;
     height: auto;
 }
-/* https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+/*  [1]W3Schools.com,.Date Unknown. [Online]. Available: How TO - Scroll Back To Top Button",https://www.w3schools.com/howto/howto_js_scroll_to_top.asp[Accessed:10.03.2023] */
+/*  Changed positioning, background color, added box shadow. */
 #scrollbutton {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 50px; /* Place the button at the bottom of the page */
-    right: 60px; /* Place the button 30px from the right */
+    display: none; /* Hide the button by default */
+    position: fixed; /* Fixed position - will always be visible */
+    bottom: 50px; /*  Place the button 50px from the bottom */
+    right: 60px; /* Place the button 60px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #819595; /* Set a background color */
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,1);
-    color: white; /* Text color */
+    background-color: #819595; /* Set a background  color that fits the website */
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,1); /* Add a shadow */
+    color: white; /* Text color */ 
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
@@ -106,21 +107,21 @@ body {
   }
   
   #scrollbutton:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #8b8888; /* Change the background color on hover. */
   }
-
+  /* Widening tabs and making it closer to the center for smaller screens */
   @media only screen and (max-width: 900px) {
     .rule-list {
-        width: 80%;
+        width: 80%; /* 80% of the screen */
     }
     .submission-step {
-        width: 80%;
+        width: 80%; /* 80% of the screen */
     }
     .download {
-        width: 80%;
+        width: 80%; /* 80% of the screen */
     }
     #submission {
-        background-size: 20%;
-        background-position: 0% 3%;
+        background-size: 20%; /* 20% of the screen */
+        background-position: 0% 3%; /* 3% of the screen */
     }
   }

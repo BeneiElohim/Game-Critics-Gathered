@@ -1,16 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* ///////Header Stylesheet///////////// */
+/* ///////////////////////////////////// */
+/* //////Imported into every page.////// */
+/* ///////////////////////////////////// */
+
+
+/* Import the font  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+
 header {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    line-height: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #819595;
-    color: #183059;
-    padding: 1em;
-    transition: border 0.5s ease-in-out;
+    font-family: "Open Sans", sans-serif; /* Set the font to Open Sans with fallback fonts */
+    font-weight: 600; /* Set the font weight to 600 */
+    line-height: 1; /* Set the line height to 1 */
+    display: flex; /* Flexbox */
+    flex-direction: row; /* Horizontal order */
+    align-items: center; /* Center the content */ 
+    justify-content: space-between; /* Space the content evenly */
+    background-color: #819595; /* Set the background color */
+    color: #183059; /* Set the text color */
+    padding: 1em; /* Set the padding */
+    transition: background-color 0.5s ease-in-out; /* Set the transition for the border */
     
 }
 header li {

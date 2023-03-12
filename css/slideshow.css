@@ -1,16 +1,21 @@
+/* Slideshow Component for Home Page */
+
+/* /////Contains full slideshow/////// */
 .slide-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 90%;
+    display: flex; /* flexbox */
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-around; /* space between images */
+    width: 90%; /* width of slideshow */
 }
 .slide-show {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: auto;
+    display: flex; /* flexbox */
+    align-items: center; /* center images */
+    width: 100%; /* width of slideshow */
+    height: auto; /* height of slideshow */
 }
+ /* [2]W3Schools.com, How TO - Slideshow.Date Unknown. [Online]. Available:https://www.w3schools.com/howto/howto_js_slideshow.asp [Accessed:25.02.2023] */
+ /* Copied the part about fading animation */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -22,21 +27,27 @@
   }
 /* editing left and right arrows to be visible and small but non-existent in mobile */
 .arrow {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    border-radius: 50%;
-    transition: ease-in-out .3s;
+    display: flex; /* flexbox */
+    align-items: center; /* center images */
+    justify-content: flex-end; /* space between images */
+    border-radius: 50%; /* round the corners */
+    transition: ease-in-out .3s; /* transition for hover */
 }
 .arrow img {
-    width: 20%;
-    height: auto;
+    width: 20%; /* width of arrow */
+    height: auto; /* height of arrow */
 }
 .next {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    display: flex; /* flexbox */
+    align-items: flex-start; /* center images */
+    justify-content: flex-start; /* position the image to the left */
 }
 .arrow:hover {
-    transform: scale(1.2);
+    transform: scale(1.2); /* scale the arrow when hovered */
 }
+/* Making the arrows disappear on smaller screens */
+@media only screen and (max-width: 600px) {
+    .arrow {
+        display: none; /* hide the arrows */
+    }
+  }

@@ -1,51 +1,56 @@
+/* ///////////////// */
+/* Footer Component */
+/* ///////////////// */
+/* Imported into every page. */
+
 footer {
-    display: flex;
-    flex-direction: row;
-    background-color: #DBF9F4;
-    justify-content: flex-start;
-    line-height: 1;
-    align-items: center;
+    display: flex; /* Flexbox */
+    flex-direction: row; /* Horizontal order */
+    background-color: #DBF9F4; /* Set the background color */
+    justify-content: flex-start; /* Align the content to the left */
+    line-height: 1; /* Set the line height */
+    align-items: center; /* Align the content to the center */
 }
 footer .logo img {
-    max-width: 100%;
-    height: 80px;
+    max-width: 100%;  /* Make sure the logo image is responsive. */
+    height: 80px; /* Set the height of the logo image */
 }
 .logo {
-    display: flex;
-    max-width: 40%;
-    align-items: center;
-    margin-left: 2%;
-    color: #183059;
+    display: flex; /* Flexbox */
+    max-width: 40%; /* Set the max width of the logo to be 40% of the footer */
+    align-items: center; /* Align the content to the center */
+    margin-left: 2%; /* Set the margin to the left to be 2% of the footer */
+    color: #183059; /* Set the text color */
 
 }
 .logo-text {
-    max-width: 60%;
-    margin-left: 3em;
+    max-width: 60%;  
+    margin-left: 3em; /* Set the margin to the left to be 3em */
 }
 footer #trademark {
-    font-size: 0.6em;
-    margin: 0px 0px 0px 0px;
+    font-size: 0.6em; /* Set the font size */
+    margin: 0px; /* Remove the default margin */ 
 }
 footer #disclaimer {
-    font-size: 0.8em;
+    font-size: 0.8em; /* Set the font size */
 }
 footer #details {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    justify-self: center;
-    color:#eff6e9;
-    margin-left: 6%;
-    text-decoration: none;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    list-style: none; /* Remove the default list style */
+    justify-self: center; /* Align the content to the center */
+    color:#eff6e9; /* Set the text color */
+    margin-left: 6%; /* Set the margin to the left to be 6% of the footer */
+    text-decoration: none; /* Remove the default text decoration */
 }
 #details li a {
-    font-size: 0.8em;
-    margin:  4px;
-    color: #183059;
-    text-decoration: none;
-    cursor: pointer;
+    font-size: 0.8em; /* Set the font size */
+    margin:  4px; /* Set the margin to be 4px */
+    color: #183059;     /* Set the text color */
+    text-decoration: none; /* Remove the default text decoration */
+    cursor: pointer; /* Set the cursor to a pointer */
     
 }
-#details li a:hover {
-    color: #60af05
+#details li a:hover { 
+    color: #60af05 ; /* Set the text color to green when hovering */
 }

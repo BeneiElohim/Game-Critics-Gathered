@@ -1,68 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/*                  Frequently Asked Questions Page Stylesheet                    */
+/* ////////////////////////////////////////////////////////////////////////////// */
+/*  Frequently Asked Questions page can be accessed at the footer of the website. */
+/*  The page contains a list of questions and answers.                            */
+/*  The questions are displayed as a list and the answers are hidden.             */
+/*  When the user clicks on a question, the answer is displayed.                  */
+/*  The user can click on the question again to hide the answer.                  */
+/*  The questions are displayed in an alternating color scheme.                   */
+/*  The answers are not hidden in smaller screens.       */
 
-@import "footer.css";
-@import "header.css";
+/* ///////////////////////// */
+/*  Importing the fonts and other stylesheets. */
+/* ///////////////////////// */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); /* Importing the Poppins font */
+@import "footer.css"; /* Importing the footer stylesheet */
+@import "header.css"; /* Importing the header stylesheet */
+
+/* ///////////////////////// */
+/*    Setting the style     */
+/* ///////////////////////// */
+
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: "Poppins", Helvetica, Arial, sans-serif;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin: 0;
-    padding: 0;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    font-family: "Poppins", Helvetica, Arial, sans-serif; /* Set the font with fallback fonts */
+    font-size: 1.2em; /* Set the font size */
+    line-height: 1.5em; /* Set the line height */
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove the default padding */
 }
 .faq {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 80%; /* Set the width of the page */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    align-items: center; /* Center the content */
+    justify-content: center; /* Center the content */
 }
 .faq-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    align-items: center; /* Center the content */
+    width: 100%; /* Set the width of the title to make sure it takes up the whole space on parent */
+    height: auto; /* Set the height of the title to be responsive. */
 }
 #question-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    align-items: flex-start; /* Align the questions to the left */
+    justify-content: center; /* Center the content */
+    width: 100%; /* Set the width of the list to make sure it takes up the whole space on parent */
+    height: auto; 
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove the default padding */
+    list-style: none; /* Remove the default list style */
 }
+/* Main tag of the FAQ page. */
 #faq {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    background-image: url(../images/faq/sonic.jpg);
-    background-repeat: no-repeat;
-    background-position: 0% 50%;
-    background-size: 12%;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    align-items: center; /* Center the content */
+    justify-content: center; /* Center the content */
+    width: 100%; /* Set the width of the list to make sure it takes up the whole space on parent */
+    height: auto;  
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove the default padding */
+    background-color: transparent; /* Set the background color to transparent to fit dark mode */
+    background-image: url(../images/faq/sonic.jpg); /* Set the background image */
+    background-repeat: no-repeat; /* Set the background image to not repeat */
+    background-position: 0% 50%; /* Set the background image to be in the center */
+    background-size: 12%; /* Set the background image to be 12% of the width of the page */
 }
-.faq-title p {
-    align-self: flex-start;
-    font-weight: bold;
-    color: #F60;
-    margin-left: 40px;
+.faq-title p { /* Set the style of the title */
+    align-self: flex-start; /* Align the title to the left */
+    font-weight: bold; /* Set the font weight to bold */
+    color: #F60; /* Set the color to have contrast */
+    margin-left: 40px; 
 }
 .question-title {
-    text-decoration: underline;
-    padding: 0;
-    cursor: pointer;
-    color: #183059;
+    text-decoration: underline; /* Set the text to be underlined */
+    padding: 0; /* Remove the default padding */
+    cursor: pointer; /* Set the cursor to be a pointer when hovering over the question */
+    color: #183059; /* Set the color to fit the rest of the website */
 }
+/* Create alternating background colors.  */
 .question:nth-child(odd) {
     background-color: #EFF6E9;
 }
@@ -70,32 +90,33 @@ body {
     background-color: #F6F6F6;
 }
 .question {
-    display: flex;
-    flex-direction: column;
-    padding:0;
-    margin: 20px
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    padding:0; /* Remove the default padding */
+    margin: 20px 0; /* Set the margin to 20px on top and bottom for extra space between questions. */
 }
 .question-answer {
-    display: none;
+    display: none; /* Hide the answer by default */
 }
 @media only screen and (max-width: 600px) {
     .question-answer {
-        display:block;
+        display:block; /* Show the answer on smaller screens */
     }
   }
 
-/* https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+/*  [1]W3Schools.com,.Date Unknown. [Online]. Available: How TO - Scroll Back To Top Button",https://www.w3schools.com/howto/howto_js_scroll_to_top.asp[Accessed:10.03.2023] */
+/*  Changed positioning, background color, added box shadow. */
 #scrollbutton {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 50px; /* Place the button at the bottom of the page */
-    right: 60px; /* Place the button 30px from the right */
+    display: none; /* Hide the button by default */
+    position: fixed; /* Fixed position - will always be visible */
+    bottom: 50px; /*  Place the button 50px from the bottom */
+    right: 60px; /* Place the button 60px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #819595; /* Set a background color */
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,1);
-    color: white; /* Text color */
+    background-color: #819595; /* Set a background  color that fits the website */
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,1); /* Add a shadow */
+    color: white; /* Text color */ 
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
@@ -103,6 +124,6 @@ body {
   }
   
   #scrollbutton:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #8b8888; /* Change the background color on hover. */
   }
 

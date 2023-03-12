@@ -1,151 +1,162 @@
+/*    Main Page Stylesheet       */
+/* Stylizes the index.html file. */
+
+/* Import the required font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+/* Import the required components */
 @import "footer.css";
 @import "header.css";
 @import "content-box.css";
 @import "slideshow.css";
+
+/* Set the body styles */
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: "Poppins", Helvetica, Arial, sans-serif;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin: 0;
-    padding: 0;
-    background-color: #fffafa;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    font-family: "Poppins", Helvetica, Arial, sans-serif; /* Set the font with fallback fonts  to Poppins */
+    font-size: 1.2em;   /* Set the font size */
+    line-height: 1.5em; /* Set the line height */
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove the default padding */
+    background-color: #fffafa; /* Set the background color to off-white */
 }
 
-.top-picks-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+.top-picks-content { 
+    display: flex;  /* Flexbox */
+    flex-direction: row; /* Horizontal order */
+    flex-wrap: wrap; /* Wrap the content */
+    align-items: center; /* Center the content */
+    justify-content: space-around; /* Center the content */
+    margin: 0; /* Remove the default margin */
+    padding: 0;    /* Remove the default padding */
+    width: 100%; /* Set the width of the content to 100% of the upper element */
+    height: auto;  /* Set the height of the content to be responsive */
+    margin-bottom: 20px;  
 }
 .top-picks {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(/images/main-page/ezio.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20% ;
-    background-position: 50% 78px;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    align-items: center; /* Center the content */
+    background-image: url(/images/main-page/ezio.png); /* Set the background image */
+    background-repeat: no-repeat; /* Set the background image to repeat */
+    background-position: center; /* Set the background image to be centered */
+    background-size: 20% ; /* Set the background image to be 20% of screen */
+    background-position: 50% 78px; /* Set the background image to be 78px from the top  and center horizontally. */
+
 }
+/*       Content that involves most popular and featured reviews                  */
 .bottom-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    justify-content: center;
-    background-image: url(/images/main-page/ori.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30%;
+    display: flex; /* Flexbox */
+    flex-direction: row; /* Horizontal order */
+    align-items: center; /* Center the content */
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove the default padding */
+    width: 100%; /* Set the width of the content to 100% of the upper element */
+    height: auto; /* Set the height of the content to be responsive */
+    margin-bottom: 20px; /* Set the margin to 20px */
+    justify-content: center; /* Center the content */
+    background-image: url(/images/main-page/ori.png); /* Set the background image */
+    background-repeat: no-repeat; /* Set the background image to repeat */
+    background-position: center; /* Set the background image to be centered */
+    background-size: 30%; /* Set the background image to be 30% of screen */
 }
 
 .most-popular {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    height: auto;
-    background-image: url(/images/main-page/lulu.png);
-    background-position: left;
-    background-size: 32%;
-    background-repeat: no-repeat;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    align-items: center; /* Center the content */
+    width: 60%; /* Set the width of the content to 60% of the upper element */
+    height: auto; 
+    background-image: url(/images/main-page/lulu.png); /* Set the background image */
+    background-position: left; /* Set the background image to be left */
+    background-size: 32%;  
+    background-repeat: no-repeat; /* Set the background image to not repeat */
 }
 .featured-review {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 60%;
-    height: auto;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    align-items: center; /* Center the content */
+    justify-content: flex-start; /* Set the content to be at the top */
+    width: 60%; /* Set the width of the content to 60% of the upper element */
+    height: auto; /* Set the height of the content to be responsive */
 }
 .latest-submissions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    background-image: url(/images/main-page/kratos-thinking.png);
-    background-position: left;
-    background-size: 20%;
-    background-repeat: no-repeat;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    align-items: center; /* Center the content */
+    height: auto; /* Set the height of the content to be responsive */
+    background-image: url(/images/main-page/kratos-thinking.png);  /* Set the background image */
+    background-position: left; /* Set the background image to be left */
+    background-size: 20%; /* Set the background image to be 20% of screen */
+    background-repeat: no-repeat; /* Set the background image to not repeat */
 }
 .top-picks-title {
-    width: 80%;
-    text-align: center;
-    background-color: transparent;
+    width: 80%; /* Set the width of the content to 80% of the upper element */
+    text-align: center;  /* Set the text to be centered */
+    background-color: transparent; /* Set the background color to transparent for dark mode */
 }
 .title {
-    color: #F60;
+    color: #F60; 
 }
+/*              Section Titles for all sections           */
 .section-title {
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,1);
-    margin-bottom: 1px;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,1); /* Set the box shadow */
+    margin-bottom: 1px; /* Set the margin to 1px */
 }
 /* Search Page */
 .search-result-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    align-items: center;    /* Center the content */
+    background-color: #ffffff; /* Set the background color to white */
 }
 .search-result-page img {
-    width: 40%;
-    height: auto;
+    width: 40%; /* Set the width of the image to 40% of the upper element */
+    height: auto; /* Set the height of the image to be responsive */
 }
+/* Container for the search results */
 .search-results-list-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    align-items: center; /* Center the content */
+    justify-content: center; /* Center the content */
+    width: 100%; /* Set the width of the content to 100% of the upper element */
+    height: auto; /* Set the height of the content to be responsive */
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove the default padding */
 }
 #filter {
-    border-radius: 2px;
+    border-radius: 5px;
 }
-/* https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+/*  [1]W3Schools.com,.Date Unknown. [Online]. Available: How TO - Scroll Back To Top Button",https://www.w3schools.com/howto/howto_js_scroll_to_top.asp[Accessed:10.03.2023] */
+/*  Changed positioning, background color, added box shadow. */
 #scrollbutton {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 50px; /* Place the button at the bottom of the page */
-    right: 60px; /* Place the button 30px from the right */
+    display: none; /* Hide the button by default */
+    position: fixed; /* Fixed position - will always be visible */
+    bottom: 50px; /*  Place the button 50px from the bottom */
+    right: 60px; /* Place the button 60px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #819595; /* Set a background color */
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,1);
-    color: white; /* Text color */
+    background-color: #819595; /* Set a background  color that fits the website */
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,1); /* Add a shadow */
+    color: white; /* Text color */ 
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
   }
-  
   #scrollbutton:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #8b8888; /* Change the background color on hover. */
   }
-
+/*  Make the content vertical on smaller screens    */
   @media only screen and (max-width: 600px) {
     .bottom-content {
-        flex-direction: column;
-        background-image: none;
+        flex-direction: column; /* Vertical order */
+        background-image: none; /* Remove the background image */
     }
     .bottom-content .content-box {
-        width: 100%;
+        width: 100%; /* Set the width of the content to 100% of the upper element */
     }
   }

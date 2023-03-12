@@ -1,42 +1,48 @@
+/*                            Main Post Stylesheet                                */
+/* ////////////////////////////////////////////////////////////////////////////// */
+/*  Main  posts are blog posts. Each blog posts share the same stylesheet.        */
+/*  The blog posts page can be accessed by clicking on the blog post title.        */
+
+/* Importing the required components and fonts*/
 @import url("header.css");
 @import url("footer.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: "Poppins", Helvetica, Arial, sans-serif;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin: 0;
-    padding: 0;
-    background-color: #fffafa;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    font-family: "Poppins", Helvetica, Arial, sans-serif; /* Set the font with fallback fonts  to Poppins */
+    font-size: 1.2em; /* Set the font size */
+    line-height: 1.5em;  /* Set the line height */
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove the default padding */
+    background-color: #fffafa; /* Set the background color to off-white */
 }
 h1 {
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 2em; /* Set the font size */
+    font-weight: bold; /* Set the font weight to bold */
 }
 .post {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Center the content */
 }
 table {
-    width: 50%;
-    height: auto;
+    width: 50%; /* Set the width of the table  to half of the upper element*/
+    height: auto; /* Set the height of the table to be responsive */
 }
 
 .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 30%;
+    display: flex; /* Flexbox */
+    flex-direction: row; /* Horizontal order */
+    justify-content: center; /* Center the content */
+    flex-wrap: wrap;    /* Wrap the content */
+    width: 30%;  /* Set the width of the content to 30% of the upper element */
 }
 .page-image {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; 
+    height: auto; 
     margin-right: 20px;
 }
 h2 {
@@ -44,58 +50,61 @@ h2 {
 }
 .post-title
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Center the content */
 }
 #main-image {
-    max-width: 700px;
-    height: auto;
+    max-width: 700px;  /* Set the width of the image to 700px */
+    height: auto; /* Set the height of the image to be responsive */
 }
 .video {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    margin-bottom: 20px;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Center the content */
+    height: auto; /* Set the height of the video to be responsive */
+    margin-bottom: 20px; /* Set the margin to 20px */
 }
-tr:nth-child(even)
+/*            Table Styles            */
+tr:nth-child(even) /* Alternate colors  */
 {
-    background-color: #52c17e;
-    color: #000000;
+    background-color: #52c17e; /* Set the background color to green */
+    color: #000000; /* Set the text color to black */
 }
 table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: center;
+    border: 1px solid black; /* Set the border to black */
+    border-collapse: collapse; /* Collapse the borders */
+    text-align: center; /* Center the text */
 }
 .post-info {
-    font-size: small;
-    width: 15%;
-    height: auto;
-    align-self: flex-start;
+    font-size: small; /* Set the font size to small */
+    width: 15%; /* Set the width of the post info to 15% of the upper element */
+    height: auto; 
+    align-self: flex-start; /* Align the post info to the left */
 }
 .title {
-    color: #F60;
+    color: #F60; /* Set the text color to off-orange */
 }
 .scoring {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical order */
+    justify-content: space-around; /* Center the content */
+    align-items: center; /* Center the content */
+    width: 100%; 
     height: auto;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+    margin-bottom: 20px; /* Set the bottom margin to 20px */
+    flex-wrap: wrap; /* Wrap the content to be responsive */
 }
-.scoring:nth-child(even) {
-    background-color: #EFF6E9;
+/* Alternate colors of backgrounds */
+.scoring:nth-child(even) { 
+    background-color: #EFF6E9; 
 }
 .scoring:nth-child(odd) {
     background-color: #FFF9C7;
 }
+
 .post-content {
     display: flex;
     flex-direction: column;
@@ -106,18 +115,19 @@ table, th, td {
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
-/* https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+/*  [1]W3Schools.com,.Date Unknown. [Online]. Available: How TO - Scroll Back To Top Button",https://www.w3schools.com/howto/howto_js_scroll_to_top.asp[Accessed:10.03.2023] */
+/*  Changed positioning, background color, added box shadow. */
 #scrollbutton {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 50px; /* Place the button at the bottom of the page */
-    right: 60px; /* Place the button 30px from the right */
+    display: none; /* Hide the button by default */
+    position: fixed; /* Fixed position - will always be visible */
+    bottom: 50px; /*  Place the button 50px from the bottom */
+    right: 60px; /* Place the button 60px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #819595; /* Set a background color */
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,1);
-    color: white; /* Text color */
+    background-color: #819595; /* Set a background  color that fits the website */
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,1); /* Add a shadow */
+    color: white; /* Text color */ 
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
@@ -125,5 +135,6 @@ table, th, td {
   }
   
   #scrollbutton:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #8b8888; /* Change the background color on hover. */
   }
+
